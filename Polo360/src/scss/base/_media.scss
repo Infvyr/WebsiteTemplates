@@ -1,0 +1,194 @@
+/* Media Queries for Adaptive Design */
+
+// Small devices (landscape phones, 576px until 992px)
+@media (min-width: 576px) and (max-width: 992px) {
+    .header-menu {
+      display: none;
+      padding: 0;
+      margin-bottom: 2em;
+      width: 100%;
+    }
+    header .cross {display: none;}
+
+    .logo-wrapper{
+        margin: 0 auto;
+        padding-bottom: 2em;
+    }
+    .header-menu_wrapper{
+        margin: 0 auto;
+    }
+    .header-menu_wrapper{
+        margin: 0 auto;
+        width: 100%;
+        flex-flow: column wrap;
+
+        .header-menu_li{
+            margin-left: -40px;
+            padding: 0.5em 0.2em;
+            border-bottom: 1px dashed #ddd;
+            border-left: 1px dashed #ddd;
+
+            &:hover{
+                border-bottom: 1px dashed $active;
+                border-left: 1px dashed $active;
+            }
+
+            div.header-menu_item{
+                border-left: none;
+            }
+        }
+    }
+
+    .header-slider,
+    .owl-carousel,
+    .owl-carousel .owl-carousel-cont .img-1,
+    .owl-carousel .owl-carousel-cont .img-2,
+    .owl-carousel .owl-carousel-cont .img-3,
+    .owl-carousel .owl-carousel-cont .img-4,
+    .owl-carousel .owl-carousel-cont .img-5{
+        height: 280px;
+    }
+    .owl-carousel-cont p{
+        font-size: 1.1em;
+        line-height: 1.2;
+    }
+
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 993px) {
+    header .hamburger, header .cross { display: none; }
+
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .header-slider,
+    .owl-carousel,
+    .owl-carousel .owl-carousel-cont .img-1,
+    .owl-carousel .owl-carousel-cont .img-2,
+    .owl-carousel .owl-carousel-cont .img-3,
+    .owl-carousel .owl-carousel-cont .img-4,
+    .owl-carousel .owl-carousel-cont .img-5{
+        height: 335px;
+    }
+    .owl-carousel-cont p{
+        font-size: 1.6em;
+        line-height: 1.2;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo-wrapper{
+        margin: 0 auto;
+        padding-bottom: 2em;
+    }
+    .header-menu_wrapper{
+        margin: 0 auto;
+    }
+
+    .post-update{
+        .post-update-cont{
+            flex: 2 1 70%;
+        }
+    }
+}
+
+@media (min-width: 481px) and (max-width: 575px) {
+    /* menu */
+    .header-menu {
+      display: none;
+      padding: 0;
+      margin-bottom: 2em;
+      width: 100%;
+    }
+
+    header .cross {
+      display: none;
+    }
+
+    .logo-wrapper{
+        margin: 0 auto;
+        padding-bottom: 2em;
+    }
+    .header-menu_wrapper{
+        margin: 0 auto;
+    }
+    .header-menu_wrapper{
+        margin: 0 auto;
+        width: 100%;
+        flex-flow: column wrap;
+
+        .header-menu_li{
+            margin-left: -40px;
+            padding: 0.5em 0.2em;
+            border-bottom: 1px dashed #ddd;
+
+            div.header-menu_item{
+                border-left: none;
+            }
+        }
+    }
+
+    .header-slider,
+    .owl-carousel,
+    .owl-carousel .owl-carousel-cont .img-1,
+    .owl-carousel .owl-carousel-cont .img-2,
+    .owl-carousel .owl-carousel-cont .img-3,
+    .owl-carousel .owl-carousel-cont .img-4,
+    .owl-carousel .owl-carousel-cont .img-5{
+        height: 250px;
+    }
+    .owl-carousel-cont p{
+        font-size: 1.1em;
+        line-height: 1;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    /* menu */
+    .header-menu {
+      display: none;
+      padding: 0;
+      margin-bottom: 2em;
+      width: 100%;
+    }
+
+    header .cross {
+      display: none;
+    }
+
+    .logo-wrapper{
+        margin: 0 auto;
+        padding-bottom: 2em;
+    }
+    .header-menu_wrapper{
+        margin: 0 auto;
+        width: 100%;
+        flex-flow: column wrap;
+
+        .header-menu_li{
+            margin-left: -40px;
+            padding: 0.5em 0.2em;
+            border-bottom: 1px dashed #ddd;
+
+            div.header-menu_item{
+                border-left: none;
+            }
+        }
+    }
+
+    .header-slider,
+    .owl-carousel,
+    .owl-carousel .owl-carousel-cont .img-1,
+    .owl-carousel .owl-carousel-cont .img-2,
+    .owl-carousel .owl-carousel-cont .img-3,
+    .owl-carousel .owl-carousel-cont .img-4,
+    .owl-carousel .owl-carousel-cont .img-5{
+        height: 180px;
+    }
+    .owl-carousel-cont p{
+        font-size: 1.1em;
+        line-height: 1.2;
+    }
+}

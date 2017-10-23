@@ -1,0 +1,29 @@
+/* == Header Styles start here == */
+
+footer {
+    padding: 1em 5px 10em 5px;
+    color: #999;
+    background-color: $footer-bgc;
+    border-top: 10px solid #4c4c4c;
+    font-size: 0.8em;
+
+    .footer-link {
+        color: #999;
+        text-decoration: none;
+    }
+
+    .left {
+        display: flex;
+        flex-flow: column wrap;
+
+        p a:hover {color: $muted;}
+    }
+}
+.footer-menu {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    li a:hover{color: $muted;}
+}
+/* == Footer Styles end here == */
