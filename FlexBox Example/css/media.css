@@ -1,0 +1,77 @@
+@media screen and (max-width: 768px) {
+	.two-blocks, .four-blocks, .three-blocks {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	.two-block .image {
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
+		margin-right: 20px;
+	}
+	.two-blocks article {
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		margin-right: 0px;
+	}
+	.four-blocks article, .three-blocks article {
+		-ms-flex-preferred-size: 100%;
+		    flex-basis: 100%;
+	}
+	.four-blocks article {
+		margin-bottom: 0.2em;
+		margin-top: 1em;
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.four-blocks article:last-child {
+		margin-bottom: 1em;
+	}
+}
+
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+	.two-blocks, .four-blocks, .three-blocks {
+		-ms-flex-wrap: wrap;
+		    flex-wrap: wrap;
+		margin: 0 auto;
+	}
+	.two-block .image {
+		-webkit-box-ordinal-group: 2;
+		    -ms-flex-order: 1;
+		        order: 1;
+		margin-right: 20px;
+	}
+	.two-blocks article {
+		-webkit-box-ordinal-group: 3;
+		    -ms-flex-order: 2;
+		        order: 2;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		margin-right: 0px;
+	}
+	 .four-blocks article {
+		-ms-flex-preferred-size: 40%;
+		    flex-basis: 40%;
+	}
+	.three-blocks article {
+		padding: 0 0.4em;
+		-ms-flex-preferred-size: 100%;
+		    flex-basis: 100%;
+	}
+}
+
+@media screen and (min-width: 2560px) {
+	header h1 { font-size: 2vw; }
+	article p { font-size: 1.5vw; padding: 0 0.3em; }
+	article h3 { font-size: 1.7vw; }
+	footer {padding: 1%;}
+	footer p { font-size: 1.2vw; }	
+	.menu { height: 10vh; }
+	.menu ul li { line-height: 10.1vh; }
+	.menu ul li a { font-size: 1.4vw; }
+	.two-blocks article .more { font-size: 1.5vw; margin-left: 0.3em; }
+}

@@ -1,0 +1,21 @@
+*, *::before, *::after {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-size: normal;
+}
+
+img, video, embed, object {
+    max-width: 100%;
+}
+
+img { vertical-align: middle; }
+label, button { cursor: pointer; }

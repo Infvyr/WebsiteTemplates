@@ -1,0 +1,38 @@
+// functions to calculate pixels to em or rem
+
+@function em($pixels, $ref: 16) {
+    @return ($pixels / $ref) * 1em;
+}
+
+@function rem($pixels, $ref: 16) {
+    @return ($pixels / $ref) * 1rem;
+}
+
+// vertical align element in block
+@mixin vertical-center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+}
+
+// text hover underline
+@mixin hover-underline {
+    text-decoration: none;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+// hover border
+@mixin hover-border {
+    border: 3px solid transparent;
+    -webkit-transition: border 0.2s ease;
+    transition: border 0.2s ease;
+
+    &:hover {
+        border-color: $color-highlight;
+    }
+}

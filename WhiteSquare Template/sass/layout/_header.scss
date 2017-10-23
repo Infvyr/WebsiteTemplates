@@ -1,0 +1,113 @@
+
+/* Style for header */
+header {
+    width: 100%;
+    margin-top: 2em;
+    .row {
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+        .left_elements {
+            position: relative;
+            margin-left: 1.7rem;
+            p {
+                a {
+                    font-size: 1.5rem;
+                    color: #7e7e7e;
+                }
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: -1.6rem;
+                    width: 1.2em;
+                    height: 1.2em;
+                    border: 2px solid $base_color;
+                }
+            }
+        }
+        .right_elements {
+            input.right_elements__serch {
+                background-color: #f3f3f3;
+                font-size: 1.2rem;
+                height: 2.4rem;
+                color: darkgray;
+                padding-left: 0.4rem;
+                padding-right: 0.4rem;
+                border: 1px solid #f8f8f8;
+            }
+            .right_elements__btn {
+                margin-left: -0.9rem;
+                height: 43px;
+                color: white;
+                padding: 9px;
+                border: 1px solid #f8f8f8;
+                background-color: $base_color;
+                width: 3rem;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* Menu styles */
+
+.hamburger, .cross {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  width: 3rem;
+  height: 3rem;
+  outline: none;
+  cursor: pointer;
+  color: #f3f3f3;
+  border: 1px solid #f3f3f3;
+  background-color: $base_color;
+  font-size: calc(16px + 1vw);
+  font-weight: 600;
+}
+
+.menu {
+    margin-bottom: 2rem;
+    width: 100%;
+    background-color: #f3f3f3;
+    .menu_base {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-flow: row wrap;
+        margin: 0;
+        padding: 0;
+        line-height: 2.5rem;
+        list-style: none;
+        li {
+            margin: 0;
+            padding: 0;
+            -webkit-transition: all 0.5s ease-in;
+            transition: all 0.5s ease-in;
+            /*padding: 0 1.6rem;*/
+            cursor: pointer;
+            &.active {
+                background-color: $base_color;
+            }
+            &:hover {
+              background-color: $base_color;
+            }
+            &.active a {color: #fff;}
+        }
+        a {
+            display: block;
+            padding: 0 1.6rem;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: #b2b2b2;
+            &:hover {color:#fff;}
+        }
+    }
+}
