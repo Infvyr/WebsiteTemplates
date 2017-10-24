@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Flexbox CSS Practica</title>
+    <style media="screen">
+      body{
+        background-color: #fefefe;
+        margin: 0;
+        padding: 0;
+        font: 1em/1.3em Roboto, Hack;
+        color: #272727;
+      }
+      img{
+        margin: 0;
+        padding: 0;
+        vertical-align: middle;
+        border: none;
+      }
+      .main{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: stretch;
+        align-content: stretch;
+
+        max-width: 1000px;
+        border: 1px solid #ccc;
+        margin: 20px auto;
+        padding: 20px;
+      }
+      .bl{
+        flex: 1 1 200px;
+        text-align: center;
+        padding: 10px;
+        margin: 10px;
+      }
+      .fl1 {background-color: green; order: 5; flex-basis: 300px;}
+      .fl2 {background-color: pink; order: 3; flex-basis: 150px;}
+      .fl3 {background-color: yellow; order: 2; flex-basis: 100%;}
+      .fl4 {background-color: aqua; order: 1; flex-basis: 100%;}
+      .fl5 {background-color: cornflowerblue; order: 6; flex-basis: 300px;}
+      .fl6 {background-color: grey; order: 4; flex-basis: 600px; }
+    </style>
+  </head>
+  <body>
+    <section class="main">
+      <div class="bl fl1"><b>Footer 1</b><br> 1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eos cum modi cupiditate perspiciatis distinctio officia debitis, a similique et?</div>
+      <div class="bl fl2"><b>Left Sidebar</b><br> 2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate porro nihil enim sunt quod adipisci, tempora voluptatem eligendi dolores quos.</div>
+      <div class="bl fl3"><b>Menu</b><br> 3 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis vero dignissimos laboriosam nobis est adipisci ad expedita aliquid eius officiis!</div>
+      <div class="bl fl4"><b>Header</b><br> 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ratione, debitis deserunt eaque. Optio consequatur, dolor minus porro eius quae.</div>
+      <div class="bl fl5"><b>Footer 2</b><br> 5 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis recusandae adipisci saepe cum nisi ipsa labore unde, totam dolore eveniet?</div>
+      <div class="bl fl6"><b>Content</b><br> 6 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis commodi, voluptatum perspiciatis labore praesentium qui provident porro itaque quidem nisi.</div>
+    </section>
+  </body>
+
+</html>
