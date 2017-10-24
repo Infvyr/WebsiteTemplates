@@ -1,0 +1,205 @@
+/*
+* -- Main Content Styles
+*/
+
+.personal-works {
+	padding: 1em 0.5em;
+	background-color: #f3fff8;
+
+	.personal-works__title {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+
+		h1 {
+			margin: -10px 0;
+			padding: .5em 0;
+			font-size: calc(1.3em + 1vw);
+			font-weight: 600;
+		}
+	}
+
+	.personal-works__description {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		    -ms-flex-flow: row wrap;
+		        flex-flow: row wrap;
+
+		p {
+			font-size: calc(0.7em + 0.4vw);
+		}
+	}
+
+	.personal-works__tabs {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+		-webkit-box-align: center;
+		    -ms-flex-align: center;
+		        align-items: center;
+		margin: 1.5rem 0;
+		border-top: 1px solid $color-highlight;
+		border-bottom: 1px solid $color-highlight;
+		border-left: 1px solid transparent;
+		border-right: 1px solid transparent;
+		background: linear-gradient(5deg, #DFE99E, #A3DCCE);
+
+		.tabs {
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: flex;
+			-webkit-box-pack: center;
+			    -ms-flex-pack: center;
+			        justify-content: center;
+			-webkit-box-align: center;
+			    -ms-flex-align: center;
+			        align-items: center;
+			width: 100%;
+
+			.personal-works__li {
+				padding: 0.2em 2.5em;
+				
+				a {
+					position: relative;
+					font-size: calc(1em + 0.5vw);
+					font-weight: 500;
+					
+					&:after {
+				        content: '';
+				        display: block;
+				        margin: auto;
+				        height: 2px;
+				        width: 0;
+				        background: transparent;
+				        -webkit-transition: width .3s ease-in-out, background-color .3s ease-in-out;
+				        transition: width .3s ease-in-out, background-color .3s ease-in-out;
+    				}
+				    &:hover:after {
+				        width: 100%;
+				        background: $color-base-light;
+				    }
+				}
+				
+			}
+			.personal-works__li.is-active .personal-works__item { color: #fff; }
+			.personal-works__li.is-active .personal-works__item:after { 
+				width: 100%;
+				background: #fff;
+			}
+		}
+	}
+
+	.personal-works__grid {
+		padding: 0.5em 0 2em;
+		margin-bottom: 1rem;
+		.tabs_content {
+			.personal-works__grid--list {
+				display: -ms-grid;
+				display: grid;
+			    -ms-grid-columns: (minmax(160px, 1fr))[auto-fill];
+			        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+				grid-auto-rows: auto;
+				grid-gap: 30px;
+
+				.personal-works__grid--item {
+					a.personal-works__grid--link {
+						position: relative;
+						display: block;
+						margin: 0 auto;
+
+						img {
+							max-width: 100%;
+							width: 305px;
+							height: 450px;
+							margin: 0 auto;
+						}
+						.personal-works__grid--link_caption {
+							position: absolute;
+						    bottom: 0;
+						    display: block;
+						    width: 100%;
+						    height: 100%;
+						    text-align: center;
+						    opacity: 0;
+						    background: rgb(223, 229, 203);
+						    -webkit-transition: all 0.3s ease-in-out;
+						    transition: all 0.3s ease-in-out;
+
+							p{
+							    position: absolute;
+							    top: 50%;
+							    width: 100%;
+							    -webkit-transform: translateY(-50%);
+							            transform: translateY(-50%);
+							    text-align: center;
+							    font-size: calc(1.1em + 0.2vw);
+							    line-height: calc(1em + 0.2vw);
+							}
+						}
+
+						&:hover .personal-works__grid--link_caption {
+							opacity: .9;
+							color: $color-highlight;
+						}
+					}
+					.project-name { 
+						padding: 0.3em 0.5em;
+						text-align: center; 
+						background-color: #DFE99E;
+					}
+				}
+			}
+		}
+		.tabs_content.hide { opacity: 0; }
+	}
+
+	/* education section */
+	.education {
+		margin-top: 2em;
+		padding-top: 2rem;
+		border-top: 1px solid $color-base-light;
+
+		.education-category {
+			padding-top: 2rem;
+
+			.education-category__title h3 {
+				text-transform: uppercase;
+				text-decoration: underline;
+				font-size: calc(0.8em + 0.5vw);
+			}
+
+			.education-category__description {
+				padding-top: 1em;
+				padding-left: 1.1rem;
+				list-style-type: decimal;
+				line-height: calc(1.3em + 0.4vw);
+
+				p {
+					text-transform: capitalize;
+
+					span {
+						font-weight: 500;
+					}
+				}
+			}
+		}
+	}
+}
