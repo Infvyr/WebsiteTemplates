@@ -1,0 +1,42 @@
+@import 'mixins/mixins';
+
+// General Colors
+$color_1: #dcad28;
+$color_2: #691c0f;
+$color_3: #343a40;
+$color_4: #868e96;
+$color_5: #e9ecef;
+
+$color_black: black;
+$color_white: white;
+$color_text:  $color_4;
+
+// Links & Buttons Colors
+$color_links_normal_state: $color_3;
+$color_links_hover_state:  $color_black;
+$btn_bgcolor_normal:       $color_1;
+$btn_bgcolor_hover:        lighten($color_1, 15%);
+$btn_text_color:           $color_white;
+$btn_text_hover:           darken($color_white, 10%);
+
+// Font sizes
+$font_size_text: 16px;
+
+// Font weight
+$light:    300;
+$regular:  400;
+$medium:   500;
+$semibold: 600;
+$bold:     700;
+
+// Font-Awsome icons
+$font_website: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+$font_brands:  'Font Awesome 5 Brands';
+$font_icon:    'Font Awesome 5 Free';
+
+// Breakpoints
+$mobile_small:        '360px';
+$mobile_portrait:     '576px';
+$tablet_portrait_min: '768px';
+$tablet_portrait_max: '992px';
+$tablet_landscape:    '1199px';

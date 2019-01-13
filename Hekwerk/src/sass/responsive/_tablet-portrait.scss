@@ -1,0 +1,32 @@
+.top-bar,
+.custom-row{
+  max-width: 960px !important;
+}
+
+.top-bar{
+  .row{
+    .offset-md-2{
+      margin-left: 0;
+      max-width: 50%;
+      flex: 0 0 50%;
+    }
+  }
+}
+.brand{
+  top: 0 !important;
+
+  .brand-logo{
+    padding-left: 15px;
+    text-align: left !important;
+
+    img{
+      height: 73px !important;
+    }
+  }
+}
+
+.custom-left-col{
+  margin-left: 12%;
+  max-width: 25%;
+  flex-basis: 25%;
+}
