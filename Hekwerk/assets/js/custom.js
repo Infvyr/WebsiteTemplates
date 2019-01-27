@@ -1,3 +1,4 @@
+;
 // sticky menu
 
 window.onscroll = function() { makeMenuSticky() };
@@ -23,10 +24,31 @@ function makeMenuSticky() {
 
 
 // counter js
-(function($){
+;(function($){
   $('.counter-number').counterUp({
     time: 800
 });
 
+// testimonial
+$('#testi').owlCarousel({
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    autoplayHoverPause: true,
+    margin: 30,
+    dots: true,
+    // lazyLoad: true,
+    responsive:{
+        0:{
+            items: 1
+        },
+        767:{
+            items: 2
+        },
+        992:{
+            items: 3
+        }
+    }
+})
 
 })(jQuery);
