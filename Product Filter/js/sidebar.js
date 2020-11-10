@@ -36,7 +36,7 @@ function initSidebar(){
         const toggleFilterBtn = document.getElementById('toggle-filter');
         const sidebar = document.querySelector('.sidebar');
 
-        // If the click happened inside the the container, bail
+        // If the click happened inside the container, bail
         if (event.target.closest('.sidebar')) return;
     
         toggleFilterBtn.classList.toggle('is-active');
