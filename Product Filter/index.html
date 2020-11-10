@@ -3,11 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.png" type="image/png">
     <title>Products</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"> 
 </head>
 <body>
+    <nav class="navigation" role="navigation">
+        <button id="toggle-filter" class="sidebar__toggle hamburger hamburger--spring" type="button" aria-label="Filter" aria-controls="navigation">
+            <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+            </span>
+        </button>
+    </nav>
 
     <section class="container">
         <div class="row">
@@ -577,107 +585,135 @@
             </main>
             
             <aside class="sidebar">
-                <!-- Close to metro -->
-                <div class="widget widget-location">
-                    <h3 class="widget__title">Close to metro</h3>
-                    <div class="widget__body">
-                        <div class="location">
-                            <div class="location__group">
-                                
-                                <input type="checkbox" id="location-10" class="location__checkbox" checked>
-                                <label for="location-10" class="location__btn">&lt; 10</label>
+                <form action="" class="form-filter">
+                    <!-- Close to metro -->
+                    <div class="widget widget-location">
+                        <h3 class="widget__title">Close to metro</h3>
+                        <div class="widget__body">
+                            <div class="location">
+                                <div class="location__group">
+                                    
+                                    <input type="checkbox" id="location-10" class="location__checkbox" checked>
+                                    <label for="location-10" class="location__btn">&lt; 10</label>
 
-                                <input type="checkbox" id="location-1020" class="location__checkbox" checked>
-                                <label for="location-1020" class="location__btn">10-20</label>
+                                    <input type="checkbox" id="location-1020" class="location__checkbox" checked>
+                                    <label for="location-1020" class="location__btn">10-20</label>
 
-                                <input type="checkbox" id="location-2030" class="location__checkbox">
-                                <label for="location-2030" class="location__btn">20-30</label>
+                                    <input type="checkbox" id="location-2030" class="location__checkbox">
+                                    <label for="location-2030" class="location__btn">20-30</label>
 
-                                <input type="checkbox" id="location-30" class="location__checkbox">
-                                <label for="location-30" class="location__btn">30+</label>
+                                    <input type="checkbox" id="location-30" class="location__checkbox">
+                                    <label for="location-30" class="location__btn">30+</label>
 
+                                </div>
+
+                                <div class="location__group">
+                                    
+                                    <input type="checkbox" id="location-any" class="location__checkbox">
+                                    <label for="location-any" class="location__btn">Any</label>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Deadline -->
+                    <div class="widget widget-deadline">
+                        <h3 class="widget__title">Deadline</h3>
+                        <div class="widget__body">
+                            <div class="widget__element">
+                                <input type="radio" id="deadline-any" name="deadline" class="deadline__radio" checked>
+                                <label for="deadline-any" class="deadline__label">Any</label>
+                            </div>
+                            <div class="widget__element">
+                                <input type="radio" id="deadline-passed" name="deadline" class="deadline__radio">
+                                <label for="deadline-passed" class="deadline__label">Passed</label>
+                            </div>
+                            <div class="widget__element">
+                                <input type="radio" id="deadline-this-year" name="deadline" class="deadline__radio">
+                                <label for="deadline-this-year" class="deadline__label">This year</label>
+                            </div>
+                            <div class="widget__element">
+                                <input type="radio" id="deadline-next-year" name="deadline" class="deadline__radio">
+                                <label for="deadline-next-year" class="deadline__label">Next year</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Additional options -->
+                    <div class="widget widget-options">
+                        <h3 class="widget__title">Additional options</h3>
+                        <div class="widget__body">
+                            <div class="widget__element">
+                                <input type="checkbox" id="option-no-cars" name="add-option" class="option__checkbox" checked>
+                                <label for="option-no-cars" class="option__label">Yard with no cars</label>
+                            </div>
+                            <div class="widget__element">
+                                <input type="checkbox" id="option-high-ceiling" name="add-option" class="option__checkbox">
+                                <label for="option-high-ceiling" class="option__label">High ceilings</label>
+                            </div>
+                            <div class="widget__element">
+                                <input type="checkbox" id="option-panoramic" name="add-option" class="option__checkbox">
+                                <label for="option-panoramic" class="option__label">Panoramic windows</label>
+                            </div>
+                            <div class="widget__element">
+                                <input type="checkbox" id="option-pantries" name="add-option" class="option__checkbox">
+                                <label for="option-pantries" class="option__label">Pantries</label>
+                            </div>
+                            <div class="widget__element">
+                                <input type="checkbox" id="option-lowrise" name="add-option" class="option__checkbox">
+                                <label for="option-lowrise" class="option__label">Low-rise</label>
                             </div>
 
-                            <div class="location__group">
-                                
-                                <input type="checkbox" id="location-any" class="location__checkbox">
-                                <label for="location-any" class="location__btn">Any</label>
-
+                            <div class="widget__element widget__element--hidden">
+                                <input type="checkbox" id="option-lowrise1" name="add-option" class="option__checkbox">
+                                <label for="option-lowrise1" class="option__label">Low-rise 1</label>
                             </div>
+
+                            <div class="widget__element widget__element--hidden">
+                                <input type="checkbox" id="option-lowrise2" name="add-option" class="option__checkbox">
+                                <label for="option-lowrise2" class="option__label">Low-rise 2</label>
+                            </div>
+
+                            <div class="widget__element widget__element--hidden">
+                                <input type="checkbox" id="option-lowrise3" name="add-option" class="option__checkbox">
+                                <label for="option-lowrise3" class="option__label">Low-rise 3</label>
+                            </div>
+
+                            <span id="see-more" class="see-more" data-option="hidden">See more</span>
                         </div>
                     </div>
-                </div>
 
-                <!-- Deadline -->
-                <div class="widget widget-deadline">
-                    <h3 class="widget__title">Deadline</h3>
-                    <div class="widget__body">
-                        <div class="widget__element">
-                            <input type="radio" id="deadline-any" name="deadline" class="deadline__radio" checked>
-                            <label for="deadline-any" class="deadline__label">Any</label>
-                        </div>
-                        <div class="widget__element">
-                            <input type="radio" id="deadline-passed" name="deadline" class="deadline__radio">
-                            <label for="deadline-passed" class="deadline__label">Passed</label>
-                        </div>
-                        <div class="widget__element">
-                            <input type="radio" id="deadline-this-year" name="deadline" class="deadline__radio">
-                            <label for="deadline-this-year" class="deadline__label">This year</label>
-                        </div>
-                        <div class="widget__element">
-                            <input type="radio" id="deadline-next-year" name="deadline" class="deadline__radio">
-                            <label for="deadline-next-year" class="deadline__label">Next year</label>
+                    <!-- Service -->
+                    <div class="widget widget-service">
+                        <div class="widget__body">
+                            <label for="service-input" class="service__switch">
+                                <input type="checkbox" id="service-input" class="service__input" name="service" checked>
+                                <span class="service__slider service__slider--round"></span>
+                                <span class="service__text">Services 0%</span>
+                            </label>
                         </div>
                     </div>
-                </div>
 
-                <!-- Additional options -->
-                <div class="widget widget-options">
-                    <h3 class="widget__title">Additional options</h3>
-                    <div class="widget__body">
-                        <div class="widget__element">
-                            <input type="checkbox" id="option-no-cars" name="add-option" class="option__checkbox" checked>
-                            <label for="option-no-cars" class="option__label">Yard with no cars</label>
-                        </div>
-                        <div class="widget__element">
-                            <input type="checkbox" id="option-high-ceiling" name="add-option" class="option__checkbox">
-                            <label for="option-high-ceiling" class="option__label">High ceilings</label>
-                        </div>
-                        <div class="widget__element">
-                            <input type="checkbox" id="option-panoramic" name="add-option" class="option__checkbox">
-                            <label for="option-panoramic" class="option__label">Panoramic windows</label>
-                        </div>
-                        <div class="widget__element">
-                            <input type="checkbox" id="option-pantries" name="add-option" class="option__checkbox">
-                            <label for="option-pantries" class="option__label">Pantries</label>
-                        </div>
-                        <div class="widget__element">
-                            <input type="checkbox" id="option-lowrise" name="add-option" class="option__checkbox">
-                            <label for="option-lowrise" class="option__label">Low-rise</label>
-                        </div>
-
-                        <div class="widget__element hidden">
-                            <input type="checkbox" id="option-lowrise1" name="add-option" class="option__checkbox">
-                            <label for="option-lowrise1" class="option__label">Low-rise 1</label>
-                        </div>
-
-                        <div class="widget__element hidden">
-                            <input type="checkbox" id="option-lowrise2" name="add-option" class="option__checkbox">
-                            <label for="option-lowrise2" class="option__label">Low-rise 2</label>
-                        </div>
-
-                        <div class="widget__element hidden">
-                            <input type="checkbox" id="option-lowrise3" name="add-option" class="option__checkbox">
-                            <label for="option-lowrise3" class="option__label">Low-rise 3</label>
-                        </div>
-
-                        <button id="see-more" class="see-more">See more</button>
+                    <!-- Form Footer -->
+                    <div class="form-footer">
+                        <button type="submit" id="form-submit" class="form-btn form-footer_submit" name="submit">
+                            Apply filters
+                        </button>
+                        <button type="reset" id="form-reset" class="form-btn form-footer_reset" name="reset">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M18 6L6 18" stroke="#3C3C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6 6L18 18" stroke="#3C3C3C" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            Reset filters
+                        </button>
                     </div>
-                </div>
+                </form>
             </aside>
         </div>
     </section>
 
-     <script src="js/filter.js"></script>
+    <script src="js/sidebar.js" defer></script>
+     <script src="js/filter.js" defer></script>
 </body>
 </html>
