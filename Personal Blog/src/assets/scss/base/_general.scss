@@ -1,0 +1,16 @@
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $bodyBgColor;
+    font-size: $textSize;
+    font-family: $primaryFont;
+    color: $textColor;
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+}

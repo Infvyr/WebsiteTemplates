@@ -1,0 +1,5 @@
+.header{
+    margin-left: auto;
+    width: calc(100% - #{$sidebarWidth});
+    background-color: #444;
+}

@@ -1,0 +1,9 @@
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: $sidebarWidth;
+    height: $sidebarHeight;
+    background-color: $sidebarBgColor;
+    z-index: $sidebarZIndex;
+}
