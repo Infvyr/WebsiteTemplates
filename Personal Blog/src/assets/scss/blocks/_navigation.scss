@@ -1,0 +1,46 @@
+    .nav{
+    &__wrapper{
+        display: flex;
+    }
+
+    &__item{
+        position: relative;
+
+        &:hover{
+            .nav__link{
+                background-color: $btnBlue;
+            }
+
+            > .subnav{
+                display: block;
+            }
+        }
+    }
+
+    &__link{
+        padding: 1.35rem;
+        display: block;
+        font-size: 1.1rem;
+        line-height: 1.2;
+        text-transform: uppercase;
+        color: $menuItemColor;
+
+        &.has-submenu{
+            padding-right: 3.5rem;
+            position: relative;
+
+            &:after{
+                content: '';
+                margin-top: 1px;
+                display: block;
+                position: absolute;
+                top: 50%;
+                right: 1.35rem;
+                transform: translateY(-50%);
+                border-style: solid;
+                border-width: 6px 5px 0 5px;
+                border-color: $menuItemColor transparent transparent transparent
+            }
+        }
+    }
+}
