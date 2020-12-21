@@ -18,9 +18,54 @@
     <section class="page">
         <!-- Header -->
         <header class="header">
-            Header
-        </header>
-        
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__wrapper">
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link" title="Home">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link has-submenu" title="News">News</a>
+                            <ul class="subnav">
+                                <li class="subnav__item">
+                                    <a href="#!" class="subnav__link" title="Building website">Building website</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="#!" class="subnav__link" title="SEO">SEO</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="#!" class="subnav__link" title="Projects">Projects</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="#!" class="subnav__link" title="Marketing">Marketing</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link" title="About me">About me</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link" title="Ads">Ads</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__wrapper">
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link" title="Profile">Profile</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link" title="Profile">Log out</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form action="/" class="search">
+                    <input type="search" class="search__input" placeholder="Search something..." />
+                </form>
+            </div>
+        </header>        
         <!-- Sidebar -->
         <aside class="sidebar">
             <header class="sidebar__header">
@@ -66,8 +111,167 @@
             <div class="container">
                 
                 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore corrupti illum veritatis nam consequatur. Dolorum quod provident est obcaecati nemo maiores aliquid nisi placeat eveniet, necessitatibus reprehenderit quisquam beatae deleniti.
+                <!-- Stories -->
+                <section class="stories">
+                    <a href="#!" class="stories__item" title="Nature is great!">
+                        <img src="assets/images/image-1.jpg" alt="" class="stories__preview">
+                        <h3 class="stories__title">Nature is great!</h3>
+                        <time class="stories__date" datetime="2020-12-22 11:30">22.12.2020</time>    
+                    </a>
+                    <a href="#!" class="stories__item" title="Big fantasy team">
+                        <img src="assets/images/image-2.jpg" alt="Big fantasy team" class="stories__preview">
+                        <h3 class="stories__title">Big fantasy team</h3>
+                        <time class="stories__date" datetime="2020-12-14  16:10">14.12.2020</time>
+                    </a>
+                    <a href="#!" class="stories__item" title="How I used to get up at 6">
+                        <img src="assets/images/image-3.jpg" alt="How I used to get up at 6" class="stories__preview">
+                        <h3 class="stories__title">How I used to get up at 6</h3>
+                        <time class="stories__date" datetime="2020-12-12 00:21">12.12.2020</time>
+                    </a>
+                    <a href="#!" class="stories__item" title="Amazing trip in Bangladesh">
+                        <img src="assets/images/image-4.jpg" alt="Amazing trip in Bangladesh" class="stories__preview">
+                        <h3 class="stories__title">Amazing trip in Bangladesh</h3>
+                        <time class="stories__date" datetime="2020-12-21 09:45">21.12.2020</time>
+                    </a>
+                </section>
                 
+                <!-- Add post -->
+                <section class="add-post">
+                     <form action="/" method="POST" class="add-post__form">
+                        <textarea name="post-text" class="add-post__text" placeholder="Post something quickly"></textarea>
+                        <div class="add-post__actions">
+                            <label for="add-post__file" class="add-post__file">
+                                <input type="file" id="add-post-file" class="">
+                            </label>
+                            <button type="submit" class="add-post__send">Send</button>
+                        </div>
+                    </form>
+                </section>
+                
+                <!-- Posts -->
+                <section class="post-content">
+                    <div class="post">
+                        <div class="post__content">
+                            <p class="post__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est adipisci maxime debitis tempora beatae eaque nam
+                                odio ipsa saepe?
+                            </p>
+                        </div>
+                        <footer class="post__footer">
+                            <ul class="post__meta">
+                                <li class="post__meta-item">
+                                    <time datetime="2020-12-18 05:33">18.12.2020</time>
+                                </li>
+                            </ul>
+                        </footer>
+                    </div>
+                
+                    <!-- Image preview -->
+                    <article class="post">
+                        <header class="post__header">
+                            <a href="" class="post__header-link">
+                                <img srcset="assets/images/eat-sleep-code-repeat-mob.jpg 480w, assets/images/eat-sleep-code-repeat.jpg 800w" sizes="(max-width: 600px) 480px, 800px" src="assets/images/eat-sleep-code-repeat.jpg" alt="">
+                            </a>
+                        </header>
+                        <div class="post__content">
+                            <h2 class="post__content-title">
+                                <a href="#!">Lorem ipsum dolor sit amet.</a>
+                            </h2>
+                            <p class="post__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est adipisci maxime debitis tempora beatae
+                                eaque nam
+                                odio ipsa saepe?
+                            </p>
+                        </div>
+                        <footer class="post__footer">
+                            <ul class="post__meta">
+                                <li class="post__meta-item">
+                                    <time datetime="2020-12-18 05:33">18.12.2020</time>
+                                </li>
+                                <li class="post__meta-item">
+                                    <a href="#">Lorem, ipsum dolor.</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="post__read">Read more</a>
+                        </footer>
+                    </article>
+                
+                    <!-- Video preview -->
+                    <article class="post">
+                        <header class="post__header post__header--video">
+                            <div class="post__video">
+                                <iframe src="https://www.youtube.com/embed/p4zbV1MBJNs" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </header>
+                        <div class="post__content">
+                            <h2 class="post__content-title">
+                                <a href="#!">Lorem ipsum dolor sit amet.</a>
+                            </h2>
+                        </div>
+                        <footer class="post__footer">
+                            <ul class="post__meta">
+                                <li class="post__meta-item">
+                                    <time datetime="2020-12-18 05:33">18.12.2020</time>
+                                </li>
+                                <li class="post__meta-item">
+                                    <a href="#">Lorem, ipsum dolor.</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="post__comment">Leave a comment</a>
+                        </footer>
+                    </article>
+                
+                    <!-- Image preview -->
+                    <article class="post">
+                        <header class="post__header">
+                            <a href="" class="post__header-link">
+                                <img src="assets/images/aglomeration.jpg" alt="">
+                            </a>
+                        </header>
+                        <div class="post__content">
+                            <h2 class="post__content-title">
+                                <a href="#!">Lorem ipsum dolor sit amet.</a>
+                            </h2>
+                            <p class="post__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est adipisci maxime debitis tempora beatae
+                                eaque nam
+                                odio ipsa saepe?
+                            </p>
+                        </div>
+                        <footer class="post__footer">
+                            <ul class="post__meta">
+                                <li class="post__meta-item">
+                                    <time datetime="2020-12-18 05:33">18.12.2020</time>
+                                </li>
+                                <li class="post__meta-item">
+                                    <a href="#">Lorem, ipsum dolor.</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="post__read">Read more</a>
+                        </footer>
+                    </article>
+                
+                    <!-- Pagination -->
+                    <ul class="pagination">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link pagination__link--prev">&lt;</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link pagination__link--active">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link pagination__link--next">&gt;</a>
+                        </li>
+                    </ul>
+                </section>
             </div>
         </main>
 
