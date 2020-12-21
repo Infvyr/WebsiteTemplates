@@ -1,6 +1,4 @@
 .main{
     margin-left: auto;
-    padding-top: 10rem;
-    width: calc(100% - #{$sidebarWidth});
-    background-color: #ccc;
+    padding: 10rem 0 8rem $sidebarWidth;
 }
