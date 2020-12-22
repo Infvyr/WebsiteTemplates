@@ -31,4 +31,15 @@
             background-color: darken($btnBlue, 5%);
         }
     }
+
+    &--comment,
+    &--goto{
+        padding-left: 3rem;
+        padding-right: 3rem;
+        border-radius: $borderRadius;
+    }
+    &--goto{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
 }

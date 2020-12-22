@@ -5,15 +5,11 @@
     box-shadow: 0 15px 25px rgba($black, .35);
     border-radius: $borderRadius;
 
-    &-content{
-        padding-bottom: 8rem;
-    }
-
     &__header{
-        margin: -2.5rem -2.5rem 2.5rem;
+        margin: 0 0 2.5rem;
 
-        &--video{
-            margin: 0 0 2.5rem;
+        &--preview{
+            margin: -2.5rem -2.5rem 2.5rem;
         }
     }
 
@@ -35,9 +31,78 @@
         }
     }
 
-    &__text{
+    &__description{
         font-size: 1.4rem;
         color: $textLightColor;
+    }
+
+    &__text{
+        padding-bottom: 1rem;
+        font-size: 1.4rem;
+        color: $textColor;
+        border-bottom: 1px solid $borderColor;
+
+        h2,h3,h4,h5,h6{
+            margin-bottom: 2rem;
+            font-weight: $textBold;
+        }
+
+        h2{
+            font-size: 2.5rem;
+        }
+
+        h3{
+            font-size: 2rem;
+        }
+
+        h4{
+            font-size: 1.8rem;
+        }
+
+        h5{
+            font-size: 1.5rem;
+        }
+
+        h6{
+            font-size: 1.3rem;
+        }
+
+        p{
+            margin-bottom: 2rem;
+        }
+
+        ul,
+        ol{
+            margin-bottom: 2rem;
+        }
+
+        ol{
+            list-style-type: decimal;
+            list-style-position: inside;
+        }
+
+        table{
+            margin-bottom: 2rem;
+            width: 100%;
+
+            thead{
+                tr{
+                    font-weight: $textBold;
+                    font-size: 1.5rem;
+                    background-color: #d2d2d2;
+                    color: #000;
+                }
+            }
+            td{
+                padding: 0.5rem 1rem;
+                border: 1px solid #fff;
+            }
+            
+        }
+
+        a{
+            color: #107eef;
+        }
     }
 
     &__footer{
@@ -83,6 +148,31 @@
 
         &:hover{
             text-decoration: underline;
+        }
+    }
+
+    &__panel-actions{
+        margin-bottom: 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__panel-link{
+        color: rgba($white, .6);
+
+        &:hover{
+            color: $white;
+
+            svg{
+                path{
+                    fill: white;
+                }
+            }
+        }
+
+        svg path{
+            transition: fill 300ms ease-in-out;
         }
     }
 }

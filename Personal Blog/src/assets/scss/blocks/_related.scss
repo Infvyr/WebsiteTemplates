@@ -1,0 +1,39 @@
+.related{
+    padding: 3rem 0 .5rem;
+    border-bottom: 1px solid $borderColor;
+
+    &__title{
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+        line-height: 1.3;
+        color: $white;
+        font-weight: $textMedium;
+    }
+
+    &__list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__list-item{
+        margin-bottom: 2.5rem;
+        width: 50%;
+    }
+
+    &__list-title{
+        font-size: 1.4rem;
+        color: $lightGrey;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        white-space: nowrap;
+
+        a{
+            color: inherit;
+        }
+    }
+
+    &__list-date{
+        color: $publishDateColor;
+        font-size: 1.2rem;
+    }
+}

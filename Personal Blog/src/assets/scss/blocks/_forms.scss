@@ -1,0 +1,47 @@
+.form__group{
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.form__control{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    display: block;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #3f3f3f;
+    border-radius: 0;
+    box-shadow: none;
+    // font-family: inherit;
+    font-size: 1.4rem;
+    color: $white;
+
+    &::placeholder{
+        color: rgba($white, .2);
+    }
+    &::-moz-placeholder{
+        color: rgba($white, .2);
+    }
+
+    &:focus + .form__line{
+        width: 100%;
+    }
+
+    &--textarea{
+        height: 30px;
+        overflow: hidden;
+        resize: none;
+    }
+}
+
+.form__line{
+    width: 0;
+    height: 1px;
+    background-color: $blue;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+    transition: width 300ms ease, background-color 300ms ease;
+}

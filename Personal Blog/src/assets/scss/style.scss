@@ -3,6 +3,7 @@
 @import 'base/general';
 @import 'base/grid';
 @import 'layout/header';
+@import 'layout/main';
 @import 'blocks/navigation';
 @import 'blocks/subnav';
 @import 'blocks/search';
@@ -15,3 +16,11 @@
 @import 'blocks/post';
 @import 'blocks/embeded-video';
 @import 'blocks/pagination';
+@import 'modifiers/modifiers';
+@import 'blocks/related';
+@import 'blocks/comments';
+@import 'blocks/forms';
+@import 'blocks/tags';
+
+@import 'pages/works';
+@import 'pages/search';
