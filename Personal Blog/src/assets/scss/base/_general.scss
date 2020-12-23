@@ -8,6 +8,10 @@ body {
     font-family: $primaryFont;
     line-height: 1.5;
     color: $textColor;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
 }
 
 *,
