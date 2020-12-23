@@ -434,6 +434,11 @@ img {
     flex: 1 1 40%;
 }
 
+.page {
+    min-height: 100vh;
+    overflow: hidden;
+}
+
 .main {
     margin-left: auto;
     margin-right: auto;
@@ -1098,6 +1103,10 @@ img {
     margin-left: 1rem;
 }
 
+.mb-25 {
+    margin-bottom: 2.5rem;
+}
+
 .post__panel-link--icon {
     display: -ms-flexbox;
     display: flex;
@@ -1224,8 +1233,7 @@ img {
 }
 
 .form__control {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
+    padding: .5rem 0 .75rem;
     display: block;
     width: 100%;
     background: none;
@@ -1355,4 +1363,77 @@ img {
 .post-work__footer {
     margin-top: auto;
     text-align: right;
+}
+
+.profile-form {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+}
+
+.profile-form__credentials {
+    margin-right: 120px;
+    -ms-flex: 1 1 calc(75% - 120px);
+    flex: 1 1 calc(75% - 120px);
+}
+
+.profile-form__image {
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
+}
+
+.profile-form__image img {
+    margin-bottom: 1.5rem;
+    display: block;
+}
+
+.profile-form__file {
+    color: #ebebeb;
+    cursor: pointer;
+    transition: color 300ms ease-in-out;
+}
+
+.profile-form__file:hover {
+    color: #107eef;
+}
+
+.profile-form__file input[type="file"] {
+    display: none;
+}
+
+.profile-form__footer {
+    -ms-flex: 1 1 100%;
+    flex: 1 1 100%;
+}
+
+.form-auth {
+    margin: 0 auto;
+    max-width: 28rem;
+}
+
+.form-signup__footer {
+    text-align: center;
+}
+
+.form-signup__links {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-signup__links a:not(:last-child) {
+    margin-right: 0.5rem;
+}
+
+.form-signup__links a {
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.form-signup__links a:hover {
+    color: #107eef;
+}
+
+.form-signup__links .separator {
+    margin: 0 .5rem;
 }
