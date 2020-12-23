@@ -1,0 +1,36 @@
+.profile-form{
+    display: flex;
+    flex-wrap: wrap;
+
+    &__credentials{
+        margin-right: 120px;
+        flex: 1 1 calc(75% - 120px);
+    }
+
+    &__image{
+        flex: 1 1 25%;
+
+        img{
+            margin-bottom: 1.5rem;
+            display: block;
+        }
+    }
+
+    &__file{
+        color: $lightGrey;
+        cursor: pointer;
+        transition: color 300ms ease-in-out;
+
+        &:hover{
+            color: #107eef;
+        }
+
+        input[type="file"]{
+            display: none;
+        }
+    }
+
+    &__footer{
+        flex: 1 1 100%;
+    }
+}
