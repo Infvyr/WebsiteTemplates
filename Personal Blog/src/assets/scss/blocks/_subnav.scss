@@ -19,6 +19,24 @@
         
         &:hover{
             background-color: darken($blue, 5%);
+            
+            @include breakpoint($tablet-bp){
+                background-color: transparent;
+            }
         }
+
+        @include breakpoint($tablet-bp){
+            font-size: 1.5rem;
+        }
+        
+    }
+
+    @include breakpoint($tablet-bp){
+        padding-left: 2rem;
+        display: block;
+        position: static;
+        width: 100%;
+        background: none;
+        box-shadow: none;
     }
 }

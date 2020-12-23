@@ -1,4 +1,6 @@
 .profile{
+    margin-top: -5rem;
+
     &__avatar{
         margin: 0 auto 2rem;
         position: relative;
@@ -8,20 +10,46 @@
         border: 2px solid white;
         box-shadow: 0 7px 20px rgba(black, .25);
         border-radius: 50%;
+
+        @include breakpoint($tablet-bp){
+            width: 6.5rem;
+            height: 6.5rem;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &__info{
+        text-align: center;
+
+        @include breakpoint($tablet-bp){
+            padding-top: 2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            flex-grow: 1;
+            text-align: left;
+        }
     }
 
     &__name{
         font-size: 1.8rem;
-        text-align: center;
+
+        @include breakpoint($tablet-bp){
+            font-size: 1.5rem;
+        }
     }
 
     &__job{
         margin-bottom: 2rem;
         display: block;
-        font-size: 14px;
+        font-size: 1.4rem;
         font-weight: $textLight;
         color: $textLightColor;
-        text-align: center;
+
+        @include breakpoint($tablet-bp){
+            margin-bottom: 0;
+            font-size: 1.2rem;
+        }
     }
 
     &__text{
@@ -34,5 +62,14 @@
 
         border-top: 1px solid $textLightColor;
         border-bottom: 1px solid $textLightColor;
+
+        @include breakpoint($tablet-bp){
+            display: none;
+        }
+    }
+
+    @include breakpoint($tablet-bp){
+        margin-top: -1rem;
+        display: flex;
     }
 }

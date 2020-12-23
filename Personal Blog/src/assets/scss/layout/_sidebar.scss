@@ -9,8 +9,12 @@
     z-index: $sidebarZIndex;
 
     &__header{
-        height: 180px;
+        height: 18rem;
         background-color: $secondaryColor;
+
+        @include breakpoint($tablet-bp){
+            height: 10rem;
+        }
     }
 
     &__header--image{
@@ -21,7 +25,6 @@
     }
 
     &__content{
-        margin-top: -5rem;
         padding-left: 2rem;
         padding-right: 2rem;
     }
@@ -30,6 +33,28 @@
         padding: 0 2rem;
         display: flex;
         justify-content: space-around;
+
+        @include breakpoint($tablet-bp){
+            margin-top: auto;
+            margin-bottom: 2rem;
+            justify-content: space-between;
+        }
+    }
+
+    @include breakpoint($tablet-bp){
+        display: flex;
+        flex-direction: column;
+        top: 4rem;
+        height: calc(100vh - 4rem);
+        overflow: auto;
+        transform: translateX(-130%);
+        transition: transform 300ms ease-in-out;
     }
 }
 
+// active state
+.is-sidebar-on{
+    .sidebar{
+        transform: translateX(0);
+    }
+}

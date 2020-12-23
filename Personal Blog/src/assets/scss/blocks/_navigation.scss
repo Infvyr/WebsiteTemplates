@@ -1,4 +1,4 @@
-    .nav{
+.nav{
     &__wrapper{
         display: flex;
     }
@@ -9,6 +9,10 @@
         &:hover{
             .nav__link{
                 background-color: $btnBlue;
+
+                @include breakpoint($tablet-bp){
+                    background-color: transparent;
+                }
             }
 
             > .subnav{
@@ -42,5 +46,32 @@
                 border-color: $menuItemColor transparent transparent transparent
             }
         }
+
+        @include breakpoint($tablet-bp){
+            padding: 1rem 2rem;
+            font-size: 1.6rem;
+        }
+    }
+
+    &.nav--mobile{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        display: none;
+
+        .nav__wrapper{
+            flex-direction: column;
+        }
+
+        a{
+            color: $white;
+        }
+
+        @include breakpoint($tablet-bp){
+            display: block;
+        }
+    }
+
+    @include breakpoint($tablet-bp){
+        display: none;
     }
 }

@@ -9,4 +9,8 @@
     &__link{
 
     }
+
+    @include breakpoint($tablet-bp){
+        display: none;
+    }
 }
