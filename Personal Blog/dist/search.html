@@ -14,7 +14,7 @@
     
     <title>Search results</title>
 </head>
-<body class="no-scroll">
+<body class="is-sidebar-ons">
 
     <section class="page">
         <!-- Header -->
@@ -50,6 +50,10 @@
                         </li>
                     </ul>
                 </nav>
+        
+                <button type="button" class="burger">
+                    <span>Menu</span>
+                </button>
             </div>
             <div class="header__right">
                 <nav class="nav">
@@ -75,8 +79,10 @@
             <div class="sidebar__content">
                 <div class="profile">
                     <img src="assets/images/sidebar-avatar.jpg" alt="avatar" class="profile__avatar">
-                    <h3 class="profile__name">John Cavendish</h3>
-                    <span class="profile__job">blogger, front-end developer</span>
+                    <div class="profile__info">
+                        <h3 class="profile__name">John Cavendish</h3>
+                        <span class="profile__job">blogger, front-end developer</span>
+                    </div>
         
                     <ul class="social">
                         <li class="social__item">
@@ -101,6 +107,40 @@
                     </div>
                 </div>
             </div>
+        
+            <nav class="nav nav--mobile">
+                <ul class="nav__wrapper">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="works.html" class="nav__link has-submenu">Works</a>
+                        <ul class="subnav">
+                            <li class="subnav__item">
+                                <a href="page.html" class="subnav__link">Building website</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="page.html" class="subnav__link">SEO</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="page.html" class="subnav__link">Projects</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="page.html" class="subnav__link">Marketing</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="page.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="page.html" class="nav__link">Ads</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="profile.html" class="nav__link">Profile</a>
+                    </li>
+                </ul>
+            </nav>
         
             <footer class="sidebar__footer">
                 <a href="works.html" class="btn btn--red">My Works</a>
