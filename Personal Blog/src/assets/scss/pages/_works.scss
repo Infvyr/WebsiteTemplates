@@ -7,6 +7,11 @@
 
     &__preview{
         flex: 0 0 31rem;
+
+        @include breakpoint($mobile-med-bp){
+            flex-basis: 100%;
+            height: 15rem;
+        }
     }
 
     &__content{
@@ -14,11 +19,22 @@
         display: flex;
         flex-direction: column;
         flex: 1 1 calc(100% - 31rem);
+
+        @include breakpoint($mobile-med-bp){
+            padding: 1.5rem;
+            flex-basis: 100%;
+        }
     }
 
     &__image{
+        width: 100%;
         height: 100%;
         object-fit: cover;
+
+        @include breakpoint($mobile-med-bp){
+            border-top-left-radius: $borderRadius;
+            border-top-right-radius: $borderRadius;
+        }
     }
 
     &__title{
@@ -29,6 +45,10 @@
         a{
             color: $white;
         }
+
+        @include breakpoint($mobile-med-bp){
+            font-size: 1.8rem;
+        }
     }
 
     &__description{
@@ -36,10 +56,22 @@
         color: $textLightColor;
         font-size: 1.6rem;
         line-height: 1.68;
+
+        @include breakpoint($mobile-med-bp){
+            font-size: 1.4rem;
+        }
     }
 
     &__footer{
         margin-top: auto;
         text-align: right;
+
+        @include breakpoint($mobile-med-bp){
+            text-align: left;
+        }
+    }
+
+    @include breakpoint($mobile-med-bp){
+        flex-direction: column;
     }
 }

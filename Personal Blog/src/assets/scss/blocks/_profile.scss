@@ -69,7 +69,7 @@
     }
 
     @include breakpoint($tablet-bp){
-        margin-top: -1rem;
-        display: flex;
+        margin-top: 0rem;
+        display: block;
     }
 }

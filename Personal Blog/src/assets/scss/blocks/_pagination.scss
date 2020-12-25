@@ -33,4 +33,8 @@
             }
         }
     }
+
+    @include breakpoint($mobile-bp){
+        margin-top: 5rem;
+    }
 }

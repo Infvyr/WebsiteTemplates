@@ -67,4 +67,9 @@
         bottom: 0;
         text-align: right;
     }
+
+    @include breakpoint($mobile-bp){
+        grid-template-columns: repeat(4, 13rem);
+        overflow: auto;
+    }
 }

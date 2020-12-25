@@ -18,8 +18,19 @@
             color: rgba(white, 4);
         }
 
+        &::-moz-placeholder{
+            color: rgba(white, 4);
+        }
+
         &:focus{
             background-color: $searchInputFocusColor;
+        }
+
+        @include breakpoint($tablet-bp){
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            height: 2rem;
+            font-size: 1.6rem;
         }
     }
 }

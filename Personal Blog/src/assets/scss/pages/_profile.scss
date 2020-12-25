@@ -5,6 +5,11 @@
     &__credentials{
         margin-right: 120px;
         flex: 1 1 calc(75% - 120px);
+
+        @include breakpoint($tablet-bp){
+            margin-right: 0;
+            flex-basis: 100%;
+        }
     }
 
     &__image{
@@ -13,6 +18,12 @@
         img{
             margin-bottom: 1.5rem;
             display: block;
+        }
+
+        @include breakpoint($tablet-bp){
+            margin-bottom: 3rem;
+            flex-basis: 100%;
+            order: -1;
         }
     }
 

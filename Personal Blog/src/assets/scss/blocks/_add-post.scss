@@ -45,6 +45,11 @@
         border-radius: 50%;
         cursor: pointer;
         transition: background-color 300ms ease-in-out;
+
+        @include breakpoint($mobile-bp){
+            width: 3.5rem;
+            height: 3.5rem;
+        }
     }
 
     &__file{
@@ -58,6 +63,10 @@
         input[type="file"]{
             display: none;
         }
+
+        @include breakpoint($mobile-bp){
+            background-size: 1.8rem;
+        }
     }
 
     &__send{
@@ -68,5 +77,13 @@
         &:hover{
             background-color: darken($blue, 5%);
         }
+
+        @include breakpoint($mobile-bp){
+            background-size: 1.5rem;
+        }
+    }
+
+    @include breakpoint($mobile-bp){
+        padding: 1.5rem;
     }
 }

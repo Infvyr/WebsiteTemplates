@@ -27,6 +27,11 @@
     padding: 10rem 0 8rem $sidebarWidth / 2;
 
     @include breakpoint($tablet-bp){
+        padding-top: 4rem;
         padding-left: 0;
+    }
+
+    @include breakpoint($mobile-bp){
+        padding-bottom: 5rem;
     }
 }
