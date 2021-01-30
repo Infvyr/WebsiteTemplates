@@ -7,7 +7,7 @@
 
     &__form{
         display: flex;
-        align-items: center;
+        align-items: flex-end;
     }
 
     &__text{
@@ -16,7 +16,7 @@
         display: block;
         flex-basis: 80%;
         flex-grow: 1;
-        height: 25px;
+        height: 35px;
         border: none;
         background-color: transparent;
         resize: none;

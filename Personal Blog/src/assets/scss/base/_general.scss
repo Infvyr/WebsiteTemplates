@@ -9,9 +9,14 @@ body {
     line-height: 1.5;
     color: $textColor;
 
-    &.no-scroll,
-    &.is-sidebar-on{
+    &.no-scroll{
         overflow: hidden;
+    }
+
+    @include breakpoint($tablet-bp){
+        &.is-sidebar-on{
+            overflow: hidden;
+        }
     }
 }
 

@@ -1,6 +1,5 @@
 .modal{
     padding: 1rem;
-    // display: flex;
     display: none;
     justify-content: center;
     align-items: center;
@@ -12,6 +11,10 @@
     background-color: rgba($black, .8);
     z-index: $modalZIndex;
 
+    &.show{
+        display: flex;
+    }
+
     &__content{
         padding: 8rem;
         position: relative;
@@ -19,9 +22,21 @@
         width: 100%;
         background-color: $primaryColor;
         border-radius: $borderRadius;
+        opacity: 0;
+        transform: scale(0.3);
+        transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
 
         &--contact{
             padding-bottom: 2.5rem;
+        }
+
+        &--story{
+            padding: 0;
+            background: none;
+        }
+
+        @include breakpoint($tablet-bp){
+            padding: 5rem 3rem 3rem;
         }
     }
 
@@ -81,5 +96,10 @@
                 }
             }
         }
+    }
+
+    &__video{
+        margin: 0 auto;
+        display: block;
     }
 }

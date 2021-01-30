@@ -8,7 +8,7 @@ title: Post
     <article class="post">
         <div class="post__panel-actions">
             <a href="index.html" class="post__panel-link">Back to overview</a>
-            <a href="#!" class="post__panel-link post__panel-link--icon">
+            <a href="#!" class="post__panel-link post__panel-link--icon" data-modal="modal-share">
                 Share this
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="share-ic ml-1">
                     <path
@@ -107,7 +107,7 @@ title: Post
                 <h3 class="comments__title">Comments</h3>
                 <form action="/" method="POST" class="comments__form">
                     <div class="form__group">
-                        <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Your comment"></textarea>
+                        <textarea class="form__control form__control--textarea" name="comment-text" placeholder="Your comment" data-autoresize></textarea>
                         <span class="form__line"></span>
                     </div>
                     <button type="submit" class="btn btn--blue btn--comment">Send</button>
