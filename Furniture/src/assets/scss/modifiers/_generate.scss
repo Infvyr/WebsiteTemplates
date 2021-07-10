@@ -1,0 +1,51 @@
+// margins
+
+@for $i from 0 through 5{
+		.mb-#{$i}{
+				margin-bottom: #{$i}rem;
+		}
+}
+
+@for $i from 0 through 5{
+		.mt-#{$i}{
+				margin-top: #{$i}rem;
+		}
+}
+
+@for $i from 0 through 5{
+		.ml-#{$i}{
+				margin-left: #{$i}rem;
+		}
+}
+
+@for $i from 0 through 5{
+		.mr-#{$i}{
+				margin-right: #{$i}rem;
+		}
+}
+
+
+// paddings
+@for $i from 0 through 5{
+		.pb-#{$i}{
+				padding-bottom: #{$i}rem;
+		}
+}
+
+@for $i from 0 through 5{
+		.pt-#{$i}{
+				padding-top: #{$i}rem;
+		}
+}
+
+@for $i from 0 through 5{
+		.pl-#{$i}{
+				padding-left: #{$i}rem;
+		}
+}
+
+@for $i from 0 through 5{
+		.pr-#{$i}{
+				padding-right: #{$i}rem;
+		}
+}

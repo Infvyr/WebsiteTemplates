@@ -1,29 +1,52 @@
-// /* cairo-300 - latin */
-// @font-face {
-//   font-family: 'Cairo';
-//   font-style: normal;
-//   font-weight: 300;
-//   src: local(''),
-//        url('../fonts/cairo-v10-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-//        url('../fonts/cairo-v10-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-// }
+// icons font
+@font-face {
+	font-family: 'icon';
+	src:
+		url('../fonts/icon.ttf?mnala') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: block;
+}
 
-// /* cairo-regular - latin */
-// @font-face {
-//   font-family: 'Cairo';
-//   font-style: normal;
-//   font-weight: 400;
-//   src: local(''),
-//        url('../fonts/cairo-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-//        url('../fonts/cairo-v10-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-// }
+[class^="icon-"], [class*=" icon-"] {
+	/* use !important to prevent issues with browser extensions that change fonts */
+	font-family: 'icon' !important;
+	speak: never;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
 
-// /* cairo-700 - latin */
-// @font-face {
-//   font-family: 'Cairo';
-//   font-style: normal;
-//   font-weight: 700;
-//   src: local(''),
-//        url('../fonts/cairo-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-//        url('../fonts/cairo-v10-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-// }
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-arrow-down:before {
+	content: "\e900";
+}
+.icon-arrow-link:before {
+	content: "\e901";
+}
+.icon-cart:before {
+	content: "\e902";
+}
+.icon-favorite:before {
+	content: "\e903";
+}
+.icon-location:before {
+	content: "\e904";
+}
+.icon-phone:before {
+	content: "\e905";
+}
+.icon-search:before {
+	content: "\e906";
+}
+.icon-send:before {
+	content: "\e907";
+}
+.icon-share:before {
+	content: "\e908";
+}
