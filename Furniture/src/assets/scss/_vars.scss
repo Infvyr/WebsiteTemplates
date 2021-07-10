@@ -1,0 +1,41 @@
+// 16px = 1.6rem;
+// 1px = 0.1rem
+
+// general
+$theme-color-1	:	#344ea2;
+$theme-color-2	: #ed2523;
+$theme-color-3	: #e1eef9;
+$theme-color-4	:	rgba(243, 221, 223, 0.69);
+$theme-color-5	:	rgba(#e1eef9, 0.86);
+$theme-color-6	:	black;
+$theme-color-7	:	white;
+
+
+// typography
+$primary-font		: system-ui,-apple-system,"Segoe UI", Roboto,"Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif;
+$secondary-font	:	serif;
+
+$extra-small-size	:	1.8rem;
+$small-size				:	2rem;
+$normal-size			: 2.2rem;
+$large-size				: 3rem;
+$big-size					: 4rem;
+$huge-size				: 5rem;
+
+$fw-light		:	300;
+$fw-regular	:	400;
+$fw-bold		:	700;
+
+
+// others
+$border-radius	:	3px;
+$modal-index		:	1010;
+
+
+// breakpoints
+$laptop					:	1200px;
+$tablet-large		:	1024px;
+$tablet-small		:	992px;
+$mobile-large		:	767px;
+$mobile-medium	:	576px;
+$mobile-small		:	480px;
