@@ -1,0 +1,42 @@
+.subnav{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 18rem;
+    background-color: $blue;
+    border-radius: 0 0 5px 5px;
+    box-shadow: 0 6px 8px rgba( $black, .25);
+
+    display: none;
+
+    &__link{
+        padding: 0.45rem 1.2rem;
+        display: block;
+        font-size: $textSize;
+        color: $menuItemColor;
+        
+        &:hover{
+            background-color: darken($blue, 5%);
+            
+            @include breakpoint($tablet-bp){
+                background-color: transparent;
+            }
+        }
+
+        @include breakpoint($tablet-bp){
+            font-size: 1.5rem;
+        }
+        
+    }
+
+    @include breakpoint($tablet-bp){
+        padding-left: 2rem;
+        display: block;
+        position: static;
+        width: 100%;
+        background: none;
+        box-shadow: none;
+    }
+}

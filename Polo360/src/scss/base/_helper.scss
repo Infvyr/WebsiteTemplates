@@ -1,0 +1,34 @@
+.wrapper {width: 100%;}
+@mixin links {
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+    outline: none;
+}
+.break{
+    background: url(../media/break.png) no-repeat;
+    background-size: cover;
+    max-width: 100%;
+    width: 97%;
+    height: 7px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+.break-dashed{
+    width: 100%;
+    height: 1px;
+    margin-bottom: 14px;
+    border: 1px dashed #d3d3d3;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    background-size: cover;
+}
+.icon-arrow-right:before {
+	content: "\279C";
+}
+.p-0{padding: 0 !important;}
+#space{padding-right: 15px !important;}
+.mb-2em{margin-bottom: 2em;}
+.mt-2em{margin-top: 2em;}
+#bg{background-color: $muted;}

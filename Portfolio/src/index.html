@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="keywords" content="HTML, CSS, Portfolio, Personal Portfolio, Responsive">
+    <meta name="description" content="Simple and fully adaptive portfolio created with HTML, CSS, JavaScript libraries like jQuery">
+    <meta name="author" content="Novatchii Vasile">
+
+    <title>Welcome to my personal page</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<!-- <link rel="icon" type="image/png" href=""> -->
+</head>
+<body>
+	<section class="wrapper">
+		<!-- sidebar who contain personal information about me -->
+		<aside class="personal-info">
+			<!-- sidebar header -->
+			<div class="personal-info__header" id="top">
+				<div class="personal-info__header-img">
+					<img src="https://static.pexels.com/photos/415829/pexels-photo-415829.jpeg" alt="CV personal photo">
+					<footer class="personal-info__header-name">
+					Brenda Augustin
+					</footer>
+				</div>
+			</div>
+			<!-- sidebar content -->
+			<div class="personal-info__content">
+				<div class="personal-info__content-category">
+					<h3><i class="icon-bookmark"></i> date personale</h3>
+					<ul class="personal-info__content-skills">
+						<li>
+							<div class="desc">
+								<i class="icon-birthday"></i>
+								<h4>20 noiembrie 1993</h4>
+							</div>
+						</li>
+						<li>
+							<div class="desc">
+								<i class="icon-device-mobile"></i>
+								<h4>064525393</h4>
+							</div>
+						</li>
+						<li>
+							<div class="desc">
+								<i class="icon-envelope"></i>
+								<h4>brenda-aug93@gmail.com</h4>
+							</div>
+						</li>
+						<li>
+							<div class="desc">
+								<i class="icon-home"></i>
+								<h4>or.Chișinău, R.Moldova</h4>
+							</div>
+						</li>
+					</ul>	
+				</div>
+				<div class="personal-info__content-category">
+					<h3><i class="icon-bookmark"></i> abilități</h3>
+					<ul class="personal-info__content-skills">
+						<li>
+							<p>HTML / CSS</p>
+						</li>
+						<li>
+							<p>Sass Preprocessor</p>
+						</li>
+						<li>
+							<p>Bootstrap / Materialize CSS</p>
+						</li>
+						<li>
+							<p>Gulp / Bower</p>
+						</li>
+						<li>
+							<p>CMS: Opencart, Wordpress</p>
+						</li>
+					</ul>	
+				</div>
+				<div class="personal-info__content-category">
+					<h3><i class="icon-bookmark"></i> competențe informatice</h3>
+					<ul class="personal-info__content-skills" id="informatique">
+						<li>
+							<p><span style="text-decoration: underline;">SO:</span> GNU/Linux / Windows</p>
+						</li>
+						<li>
+							<p><span style="text-decoration: underline;">Office:</span> Microsoft Office / LibreOffice</p>
+						</li>
+						<li>
+							<p>PHP - nivel începător spre mediu</p>
+						</li>
+						<li>
+							<p>SQL - nivel avansat</p>
+						</li>
+						<li>
+							<p>JavaScrip (jQuery) - nivel mediu</p>
+						</li>
+					</ul>	
+				</div>
+				<div class="personal-info__content-category">
+					<h3><i class="icon-earth"></i> limbi</h3>
+					<ul class="personal-info__content-skills" id="lang">
+						<li>
+							<p>Română - nativ</p>
+						</li>
+						<li>
+							<p>Rusă - mediu</p>
+						</li>
+						<li>
+							<p>Engleză - începător</p>
+						</li>
+					</ul>	
+				</div>
+				<div class="personal-info__content-category">
+					<h3><i class="icon-bookmark"></i> competențe sociale</h3>
+					<ul class="personal-info__content-skills" id="social">
+						<li>
+							<p>Seriozitate, punctualitate, spirit de echipă</p>
+						</li>
+						<li>
+							<p>Capacitate de asimilare rapidă a informațiilor</p>
+						</li>
+						<li>
+							<p>Capacitate de autoperfecționare</p>
+						</li>
+						<li>
+							<p>Dorință de învăța lucruri noi</p>
+						</li>
+					</ul>	
+				</div>
+				<div class="personal-info__content-category">
+					<h3><i class="icon-bookmark"></i> hobby</h3>
+					<ul class="personal-info__content-skills" id="hobby">
+						<li>
+							<p>Programare WEB</p>
+						</li>
+						<li>
+							<p>GNU/Linux</p>
+						</li>
+						<li>
+							<p>Fotbal</p>
+						</li>
+						<li>
+							<p>Lectură</p>
+						</li>
+					</ul>	
+				</div>
+			</div>
+		</aside>
+
+		<!-- main content -->
+		<main class="personal-works">
+			<div class="personal-works__title">
+				<h1>&lt;&lt;&nbsp;Portofoliu&nbsp;&gt;&gt;</h1>
+			</div>
+			<div class="personal-works__description">
+				<p>Mai jos sunt prezentate toate lucrările individuale sau echipă create în cadrul companiilor unde am lucrat, dar și lucrările personale create înafara orelor de muncă la serviciu.</p>
+			</div>
+			<!-- Tabs -->
+			<div class="personal-works__tabs">
+				<ul class="tabs">
+					<li class="personal-works__li is-active">
+						<a class="personal-works__item" href="#tab1">Toate</a>
+					</li>
+					<li class="personal-works__li">
+						<a class="personal-works__item" href="#tab2">Landing</a>
+					</li>
+					<li class="personal-works__li">
+						<a class="personal-works__item" href="#tab3">Companie</a>
+					</li>
+					<li class="personal-works__li">
+						<a class="personal-works__item" href="#tab4">Altele</a>
+					</li>
+				</ul>
+			</div>
+			<!-- Portfolio Image Grid -->
+			<div class="personal-works__grid popup-gallerys">
+				<div class="tabs_content" id="tab1">
+					<ul class="personal-works__grid--list">
+						<li class="personal-works__grid--item">
+							<a href="images/FlexboxFullpage.png" class="personal-works__grid--link" data-fancybox="images" data-caption="CSS Flexbox Blog Template">
+								<img src="images/FlexboxFullpage.png" alt="CSS Flexbox Blog Template">
+								<div class="personal-works__grid--link_caption">
+									<p>Simple blog template based on CSS Flexbox</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+						<li class="personal-works__grid--item">
+							<a href="images/Screen Shot OnePage.png" class="personal-works__grid--link" data-fancybox="images" data-caption="One Page Template">
+								<img src="images/Screen Shot OnePage.png" alt="One Page Template">
+								<div class="personal-works__grid--link_caption">
+									<p>Simple One Page Template</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+						<li class="personal-works__grid--item">
+							<a href="images/whitesquare.png" class="personal-works__grid--link" data-fancybox="images" data-caption="Whitesquare Template">
+								<img src="images/whitesquare.png" alt="Whitesquare Template">
+								<div class="personal-works__grid--link_caption">
+									<p>Full Website based on Whitesquare Template</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+						<li class="personal-works__grid--item">
+							<a href="images/PortolioFullpage.png" class="personal-works__grid--link" data-fancybox="images" data-caption="Portfolio Template for Company">
+								<img src="images/PortolioFullpage.png" alt="Portfolio Template for Company">
+								<div class="personal-works__grid--link_caption">
+									<p>Company Porfolio</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+						<li class="personal-works__grid--item">
+							<a href="images/Screenshot-cv_portfolio.png" class="personal-works__grid--link" data-fancybox="images" data-caption="Personal CV Portfolio">
+								<img src="images/Screenshot-cv_portfolio.png" alt="Personal CV Portfolio">
+								<div class="personal-works__grid--link_caption">
+									<p>Personal CV Portfolio based on CSS Grid Layout</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+						<li class="personal-works__grid--item">
+							<a href="images/Polo360.png" class="personal-works__grid--link" data-fancybox="images" data-caption="Website Template for Wordpress">
+								<img src="images/Polo360.png" alt="Website Template for Wordpress">
+								<div class="personal-works__grid--link_caption">
+									<p>Polo360 Template for Wordpress</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+					</ul>
+				</div> <!-- end tab1 -->
+				<div class="tabs_content hide" id="tab2">
+					<ul class="personal-works__grid--list">
+						<li class="personal-works__grid--item">
+							<a href="images/Screen Shot OnePage.png" class="personal-works__grid--link" data-fancybox="images" data-caption="One Page Template">
+								<img src="images/Screen Shot OnePage.png" alt="One Page Template">
+								<div class="personal-works__grid--link_caption">
+									<p>Simple One Page Template</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+						<li class="personal-works__grid--item">
+							<a href="images/PortolioFullpage.png" class="personal-works__grid--link" data-fancybox="images" data-caption="Portfolio Template for Company">
+								<img src="images/PortolioFullpage.png" alt="Portfolio Template for Company">
+								<div class="personal-works__grid--link_caption">
+									<p>Company Porfolio</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+					</ul>
+				</div> <!-- end tab2 -->
+				<div class="tabs_content hide" id="tab3">
+					<ul class="personal-works__grid--list">
+						<li class="personal-works__grid--item">
+							<a href="images/PortolioFullpage.png" class="personal-works__grid--link" data-fancybox="images" data-caption="Portfolio Template for Company">
+								<img src="images/PortolioFullpage.png" alt="Portfolio Template for Company">
+								<div class="personal-works__grid--link_caption">
+									<p>Company Porfolio</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+						<li class="personal-works__grid--item">
+							<a href="images/whitesquare.png" class="personal-works__grid--link" data-fancybox="images" data-caption="Whitesquare Template">
+								<img src="images/whitesquare.png" alt="Whitesquare Template">
+								<div class="personal-works__grid--link_caption">
+									<p>Full Website based on Whitesquare Template</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+						<li class="personal-works__grid--item">
+							<a href="images/Polo360.png" class="personal-works__grid--link" data-fancybox="images" data-caption="Website Template for Wordpress">
+								<img src="images/Polo360.png" alt="Website Template for Wordpress">
+								<div class="personal-works__grid--link_caption">
+									<p>Polo360 Template for Wordpress</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+					</ul>
+				</div> <!-- end tab3 -->
+				<div class="tabs_content hide" id="tab4">
+					<ul class="personal-works__grid--list">
+						<li class="personal-works__grid--item">
+							<a href="images/Screenshot-cv_portfolio.png" class="personal-works__grid--link" data-fancybox="images" data-caption="Personal CV Portfolio">
+								<img src="images/Screenshot-cv_portfolio.png" alt="Personal CV Portfolio">
+								<div class="personal-works__grid--link_caption">
+									<p>Personal CV Portfolio based on CSS Grid Layout</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+						<li class="personal-works__grid--item">
+							<a href="images/FlexboxFullpage.png" class="personal-works__grid--link" data-fancybox="images" data-caption="CSS Flexbox Blog Template">
+								<img src="images/FlexboxFullpage.png" alt="CSS Flexbox Blog Template">
+								<div class="personal-works__grid--link_caption">
+									<p>Simple blog template based on CSS Flexbox</p>
+								</div>
+							</a>
+							<div class="project-name">
+								<a href="#!" target="_blank" title="Deschide-ți link-ul">https://www.website-example.com</a>
+							</div>
+						</li>
+					</ul>
+				</div> <!-- end tab4 -->
+			</div> <!-- personal-works__grid -->
+			
+			<section class="education">
+				<div class="personal-works__title">
+					<h1>&lt;&lt;&nbsp;Educație&nbsp;&gt;&gt;</h1>
+				</div>
+				<div class="education-category">
+					<div class="education-category__title">
+						<h3><span class="circle"></span>Universitatea Tehnică a Moldovei</h3>
+					</div>
+					<ul class="education-category__description">
+						<li>
+							<p><span>anii de studiu:</span> 2013-2017</p>
+						</li>
+						<li>
+							<p><span>facultate:</span> calculatoare, informatică și microelectronică</p>
+						</li>
+						<li>
+							<p><span>specialitate:</span> calculatoare</p>
+						</li>
+						<li>
+							<p><span>titlu:</span> inginer licențiat</p>
+						</li>
+					</ul>
+				</div>
+				<div class="education-category">
+					<div class="education-category__title">
+						<h3><span class="circle"></span>Liceul Teoretic <q>B.P-Hasdeu</q> , or. Cahul</h3>
+					</div>
+					<ul class="education-category__description">
+						<li>
+							<p><span>anii de studiu:</span> 2010-2013</p>
+						</li>
+						<li>
+							<p><span>Profil:</span> real</p>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</main>
+
+		<!-- footer section -->
+		<footer class="personal-contacts">
+			<div class="personal-contacts__left">
+				<span>Design &amp; Machetare:</span>
+				<a href="#top">Brenda Augustin</a>
+			</div>
+			<div class="personal-contacts__right">
+				<p>Mă puteți găsi pe:</p>
+				<ul class="personal-contacts__right-social">
+					<li><a href="mailto:brenda-aug93@gmail.com" class="gmail"><i class="icon-gmail"></i></a></li>
+					<li><a href="skype:brenda-aug93?chat"><i class="icon-skype" class="skype"></i></a></li>
+				</ul>
+			</div>
+		</footer>
+
+	</section>
+
+	<!-- jQuery 2.2.4 and custom code -->
+	<script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/custom.js"></script>
+</body>
+</html>

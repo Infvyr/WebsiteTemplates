@@ -1,0 +1,83 @@
+/*
+* -- Header
+*/
+
+.page-nav {
+    background-color: $color-base;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0 0;
+
+    @include tablet-port {
+        padding: 1.5em;
+    }
+
+    ul { list-style: none; }
+}
+
+.page-nav__li {
+    position: relative;
+    border-bottom: 1px solid #ccc;
+
+    @include tablet-port {
+        display: inline-block;
+        border: 0;
+
+        &::after {
+            content: "-";
+            position: absolute;
+            top: 50%;
+            right: -0.15em;
+            -webkit-transform: translate(0, -50%);
+                    transform: translate(0, -50%);
+        }
+        &:last-child::after {
+            display: none;
+        }
+    }
+}
+
+.page-nav__item {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    text-transform: uppercase;
+    -webkit-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+    padding: 0.5em 1em;
+
+    &:hover { opacity: 0.7; }
+
+    @include tablet-port {
+        font-size: em(18);
+        padding: 1em 2em;
+    }
+}
+
+.page-nav__hamburger {
+    display: inline-block;
+    cursor: pointer;
+    -webkit-transition: -webkit-transform 0.2s ease;
+    transition: -webkit-transform 0.2s ease;
+    transition: transform 0.2s ease;
+    transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+    margin-bottom: 1em;
+    font-size: 2em;
+
+    &:hover {
+        -webkit-transform: scale(1.2);
+                transform: scale(1.2);
+    }
+
+    @include tablet-port {
+        display: none;
+    }
+}
+
+.page-nav__ul {
+    display: none;
+
+    @include tablet-port {
+        display: block !important;
+    }
+}

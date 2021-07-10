@@ -1,0 +1,50 @@
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-color: $bodyBgColor;
+    font-size: $textSize;
+    font-family: $primaryFont;
+    line-height: 1.5;
+    color: $textColor;
+
+    &.no-scroll{
+        overflow: hidden;
+    }
+
+    @include breakpoint($tablet-bp){
+        &.is-sidebar-on{
+            overflow: hidden;
+        }
+    }
+}
+
+*,
+*:after,
+*:before{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+a,
+a:hover,
+a:focus{
+    outline: 0;
+    text-decoration: none;
+}
+
+a{
+    color: $btnBlue;
+    transition: all 300ms ease-in-out;
+}
+
+textarea{
+    font-family: inherit;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}

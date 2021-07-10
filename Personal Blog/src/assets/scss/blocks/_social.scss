@@ -1,0 +1,16 @@
+.social{
+    display: flex;
+    justify-content: center;
+
+    &__item{
+        margin: 0 .75rem
+    }
+
+    &__link{
+
+    }
+
+    @include breakpoint($tablet-bp){
+        display: none;
+    }
+}

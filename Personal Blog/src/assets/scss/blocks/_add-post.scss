@@ -1,0 +1,89 @@
+.add-post{
+    margin-bottom: 3rem;
+    padding: 1.5rem 2rem;
+    background-color: $secondaryColor;
+    border-radius: $borderRadius;
+    box-shadow: 0 15px 25px rgba($black, .45);
+
+    &__form{
+        display: flex;
+        align-items: flex-end;
+    }
+
+    &__text{
+        font-size: 1.5rem;
+        color: $white;
+        display: block;
+        flex-basis: 80%;
+        flex-grow: 1;
+        height: 35px;
+        border: none;
+        background-color: transparent;
+        resize: none;
+        overflow: hidden;
+
+        &::placeholder{
+            color: $textLightColor;
+        }
+        &::-moz-placeholder{
+            color: $textLightColor;
+        }
+    }
+
+    &__actions{
+        flex: 1 0 20%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    &__file,
+    &__send{
+        display: block;
+        width: 4.4rem;
+        height: 4.4rem;
+        border-radius: 50%;
+        cursor: pointer;
+        transition: background-color 300ms ease-in-out;
+
+        @include breakpoint($mobile-bp){
+            width: 3.5rem;
+            height: 3.5rem;
+        }
+    }
+
+    &__file{
+        margin-right: 15px;
+        background: $lightGrey url('../images/photocamera.svg') center no-repeat;
+
+        &:hover{
+            background-color: darken($lightGrey, 5%);
+        }
+
+        input[type="file"]{
+            display: none;
+        }
+
+        @include breakpoint($mobile-bp){
+            background-size: 1.8rem;
+        }
+    }
+
+    &__send{
+        background: $blue url('../images/send.svg') center no-repeat;
+        border: 0;
+        color: transparent;
+
+        &:hover{
+            background-color: darken($blue, 5%);
+        }
+
+        @include breakpoint($mobile-bp){
+            background-size: 1.5rem;
+        }
+    }
+
+    @include breakpoint($mobile-bp){
+        padding: 1.5rem;
+    }
+}

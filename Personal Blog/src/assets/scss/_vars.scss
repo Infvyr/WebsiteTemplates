@@ -1,0 +1,53 @@
+// general
+$primaryColor: #202020;
+$secondaryColor: #121212;
+$textColor: white;
+$textLightColor: #d2d2d2;
+$bodyBgColor: #181818;
+$menuItemColor: white;
+$searchInputColor: white;
+$searchInputFocusColor: #000;
+$publishDateColor: #828282;
+$readMoreColor: #107eef;
+$paginationLinkColor: #fff;
+$paginationBorderColor: #fff;
+$paginationBgColor: #0d0d0d;
+$paginationBgActiveColor: #1317c9;
+$paginationBorderRadius: 3px;
+$textSize: 1.4rem;
+$primaryFont: system-ui,-apple-system,"Segoe UI", Roboto,"Helvetica Neue", Arial, "Noto Sans", "Liberation Sans",sans-serif, "Apple Color Emoji","Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$textLight: 300;
+$textNormal: 400;
+$textMedium: 500;
+$textSemiBold: 600;
+$textBold: 700;
+$btnRed: #ed3024;
+$btnBlue: #1317c9;
+$blue: #1317c9;
+$red: #ed3024;
+$black: #000;
+$white: #fff;
+$orange: #ea8c1e;
+$lightGrey: #ebebeb;
+$borderRadius: 5px;
+$borderColor: #1c1c1c;
+
+// sidebar
+$sidebarZIndex: 1000;
+$sidebarWidth: 300px;
+$sidebarHeight: 100vh;
+$sidebarBgColor: #1C1C1C;
+
+// modal
+$modalZIndex: 1010;
+$modalLinkColor: #b2b2b2;
+
+// burger
+$burgerColor: white;
+$burgerWidth: 3rem;
+$burgerHeight: 2rem;
+
+// breakpoints
+$tablet-bp: 1200px;
+$mobile-med-bp: 767px;
+$mobile-bp: 576px;

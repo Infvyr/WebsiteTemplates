@@ -1,0 +1,75 @@
+.profile{
+    margin-top: -5rem;
+
+    &__avatar{
+        margin: 0 auto 2rem;
+        position: relative;
+        display: block;
+        width: 100px;
+        height: 100px;
+        border: 2px solid white;
+        box-shadow: 0 7px 20px rgba(black, .25);
+        border-radius: 50%;
+
+        @include breakpoint($tablet-bp){
+            width: 6.5rem;
+            height: 6.5rem;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+    }
+
+    &__info{
+        text-align: center;
+
+        @include breakpoint($tablet-bp){
+            padding-top: 2rem;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            flex-grow: 1;
+            text-align: left;
+        }
+    }
+
+    &__name{
+        font-size: 1.8rem;
+
+        @include breakpoint($tablet-bp){
+            font-size: 1.5rem;
+        }
+    }
+
+    &__job{
+        margin-bottom: 2rem;
+        display: block;
+        font-size: 1.4rem;
+        font-weight: $textLight;
+        color: $textLightColor;
+
+        @include breakpoint($tablet-bp){
+            margin-bottom: 0;
+            font-size: 1.2rem;
+        }
+    }
+
+    &__text{
+        margin-top: 3rem;
+        margin-bottom: 3rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        font-size: 1.2rem;
+        text-align: center;
+
+        border-top: 1px solid $textLightColor;
+        border-bottom: 1px solid $textLightColor;
+
+        @include breakpoint($tablet-bp){
+            display: none;
+        }
+    }
+
+    @include breakpoint($tablet-bp){
+        margin-top: 0rem;
+        display: block;
+    }
+}

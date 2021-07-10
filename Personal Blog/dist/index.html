@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="google" content="notranslate">
+    <meta name="description" content="">
+    
+    <title>Home</title>
+</head>
+<body>
+
+    <section class="page" id="page">
+        <!-- Header -->
+        <header class="header">
+            <div class="header__left">
+                <nav class="nav">
+                    <ul class="nav__wrapper">
+                        <li class="nav__item">
+                            <a href="index.html" class="nav__link" title="Home">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="works.html" class="nav__link has-submenu" title="News">Works</a>
+                            <ul class="subnav">
+                                <li class="subnav__item">
+                                    <a href="#!" class="subnav__link" title="Building website">Building website</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="#!" class="subnav__link" title="SEO">SEO</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="#!" class="subnav__link" title="Projects">Projects</a>
+                                </li>
+                                <li class="subnav__item">
+                                    <a href="#!" class="subnav__link" title="Marketing">Marketing</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav__item">
+                            <a href="page.html" class="nav__link" title="About me">About me</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="page.html" class="nav__link" title="Ads">Ads</a>
+                        </li>
+                    </ul>
+                </nav>
+        
+                <button type="button" class="burger" id="sidebarToggle">
+                    <span>Menu</span>
+                </button>
+            </div>
+            <div class="header__right">
+                <nav class="nav">
+                    <ul class="nav__wrapper">
+                        <li class="nav__item">
+                            <a href="profile.html" class="nav__link" title="Profile">Profile</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#!" class="nav__link" title="Profile">Log out</a>
+                        </li>
+                    </ul>
+                </nav>
+                <form action="search.html" class="search">
+                    <input type="search" class="search__input" placeholder="Search something..." />
+                </form>
+            </div>
+        </header>        
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <header class="sidebar__header">
+                <img src="assets/images/sidebar-main-img.jpg" alt="" class="sidebar__header--image">
+            </header>
+            <div class="sidebar__content">
+                <div class="profile">
+                    <img src="assets/images/sidebar-avatar.jpg" alt="avatar" class="profile__avatar">
+                    <div class="profile__info">
+                        <h3 class="profile__name">John Cavendish</h3>
+                        <span class="profile__job">blogger, front-end developer</span>
+                    </div>
+        
+                    <ul class="social">
+                        <li class="social__item">
+                            <a href="https://instagram.com" title="" class="social__link" target="_blank">
+                                <img src="assets/images/instagram.svg" alt="Instagram of John Cavendish" class="social__image">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://vk.com" title="" class="social__link" target="_blank">
+                                <img src="assets/images/vk.svg" alt="Vk of John Cavendish" class="social__image">
+                            </a>
+                        </li>
+                        <li class="social__item">
+                            <a href="https://pinterest.com" title="" class="social__link" target="_blank">
+                                <img src="assets/images/pinterest.svg" alt="Pinterest of John Cavendish" class="social__image">
+                            </a>
+                        </li>
+                    </ul>
+        
+                    <div class="profile__text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, laudantium. Rem, voluptate facere? Deserunt laboriosam inventore odio maiores soluta, in consequuntur. Consequuntur enim tenetur ut unde dignissimos, doloribus quasi nam!</p>
+                    </div>
+                </div>
+            </div>
+        
+            <nav class="nav nav--mobile">
+                <ul class="nav__wrapper">
+                    <li class="nav__item">
+                        <a href="index.html" class="nav__link">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="works.html" class="nav__link has-submenu">Works</a>
+                        <ul class="subnav">
+                            <li class="subnav__item">
+                                <a href="page.html" class="subnav__link">Building website</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="page.html" class="subnav__link">SEO</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="page.html" class="subnav__link">Projects</a>
+                            </li>
+                            <li class="subnav__item">
+                                <a href="page.html" class="subnav__link">Marketing</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <a href="page.html" class="nav__link">About me</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="page.html" class="nav__link">Ads</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="profile.html" class="nav__link">Profile</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#" class="nav__link">Log out</a>
+                    </li>
+                </ul>
+            </nav>
+        
+            <footer class="sidebar__footer">
+                <a href="works.html" class="btn btn--red">My Works</a>
+                <button class="btn btn--blue" type="button" data-modal="modal-contact">Contact me</button>
+            </footer>
+        </aside>        
+        <!-- Main content -->
+        <main class="main">
+            <div class="container">
+                
+                
+                <!-- Stories -->
+                <section class="stories">
+                    <a href="#!" class="stories__item" title="Nature is great!" data-modal="modal-story">
+                        <img src="assets/images/image-1.jpg" alt="" class="stories__preview">
+                        <h3 class="stories__title">Nature is great!</h3>
+                        <time class="stories__date" datetime="2020-12-22 11:30">22.12.2020</time>    
+                    </a>
+                    <a href="#!" class="stories__item" title="Big fantasy team" data-modal="modal-story">
+                        <img src="assets/images/image-2.jpg" alt="Big fantasy team" class="stories__preview">
+                        <h3 class="stories__title">Big fantasy team</h3>
+                        <time class="stories__date" datetime="2020-12-14  16:10">14.12.2020</time>
+                    </a>
+                    <a href="#!" class="stories__item" title="How I used to get up at 6" data-modal="modal-story">
+                        <img src="assets/images/image-3.jpg" alt="How I used to get up at 6" class="stories__preview">
+                        <h3 class="stories__title">How I used to get up at 6</h3>
+                        <time class="stories__date" datetime="2020-12-12 00:21">12.12.2020</time>
+                    </a>
+                    <a href="#!" class="stories__item" title="Amazing trip in Bangladesh" data-modal="modal-story">
+                        <img src="assets/images/image-4.jpg" alt="Amazing trip in Bangladesh" class="stories__preview">
+                        <h3 class="stories__title">Amazing trip in Bangladesh</h3>
+                        <time class="stories__date" datetime="2020-12-21 09:45">21.12.2020</time>
+                    </a>
+                </section>
+                
+                <!-- Add post -->
+                <section class="add-post">
+                     <form action="/" method="POST" class="add-post__form">
+                        <textarea name="post-text" class="add-post__text" placeholder="Post something quickly" data-autoresize></textarea>
+                        <div class="add-post__actions">
+                            <label for="add-post__file" class="add-post__file">
+                                <input type="file" id="add-post__file" class="">
+                            </label>
+                            <button type="submit" class="add-post__send">Send</button>
+                        </div>
+                    </form>
+                </section>
+                
+                <!-- Posts -->
+                <section class="post-content">
+                    <div class="post">
+                        <div class="post__content">
+                            <p class="post__text">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est adipisci maxime debitis tempora beatae eaque nam
+                                odio ipsa saepe?
+                            </p>
+                        </div>
+                        <footer class="post__footer">
+                            <ul class="post__meta">
+                                <li class="post__meta-item">
+                                    <time datetime="2020-12-18 05:33">18.12.2020</time>
+                                </li>
+                            </ul>
+                        </footer>
+                    </div>
+                
+                    <!-- Image preview -->
+                    <article class="post">
+                        <header class="post__header post__header--preview">
+                            <a href="post.html" class="post__header-link">
+                                <img srcset="assets/images/eat-sleep-code-repeat-mob.jpg 480w, assets/images/eat-sleep-code-repeat.jpg 800w" sizes="(max-width: 600px) 480px, 800px" src="assets/images/eat-sleep-code-repeat.jpg" alt="">
+                            </a>
+                        </header>
+                        <div class="post__content">
+                            <h2 class="post__content-title">
+                                <a href="post.html">Lorem ipsum dolor sit amet.</a>
+                            </h2>
+                            <p class="post__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est adipisci maxime debitis tempora beatae
+                                eaque nam odio ipsa saepe?
+                            </p>
+                        </div>
+                        <footer class="post__footer">
+                            <ul class="post__meta">
+                                <li class="post__meta-item">
+                                    <time datetime="2020-12-18 05:33">18.12.2020</time>
+                                </li>
+                                <li class="post__meta-item">
+                                    <a href="#">Lorem, ipsum dolor.</a>
+                                </li>
+                            </ul>
+                            <a href="post.html" class="post__read">Read more</a>
+                        </footer>
+                    </article>
+                
+                    <!-- Video preview -->
+                    <article class="post">
+                        <header class="post__header">
+                            <div class="post__video">
+                                <iframe src="https://www.youtube.com/embed/p4zbV1MBJNs" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                        </header>
+                        <div class="post__content">
+                            <h2 class="post__content-title">
+                                <a href="#!">Lorem ipsum dolor sit amet.</a>
+                            </h2>
+                        </div>
+                        <footer class="post__footer">
+                            <ul class="post__meta">
+                                <li class="post__meta-item">
+                                    <time datetime="2020-12-18 05:33">18.12.2020</time>
+                                </li>
+                                <li class="post__meta-item">
+                                    <a href="#">Lorem, ipsum dolor.</a>
+                                </li>
+                            </ul>
+                            <a href="#" class="post__comment">Leave a comment</a>
+                        </footer>
+                    </article>
+                
+                    <!-- Image preview -->
+                    <article class="post">
+                        <header class="post__header post__header--preview">
+                            <a href="post.html" class="post__header-link">
+                                <img src="assets/images/aglomeration.jpg" alt="">
+                            </a>
+                        </header>
+                        <div class="post__content">
+                            <h2 class="post__content-title">
+                                <a href="post.html">Lorem ipsum dolor sit amet.</a>
+                            </h2>
+                            <p class="post__description">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod est adipisci maxime debitis tempora beatae
+                                eaque nam odio ipsa saepe?
+                            </p>
+                        </div>
+                        <footer class="post__footer">
+                            <ul class="post__meta">
+                                <li class="post__meta-item">
+                                    <time datetime="2020-12-18 05:33">18.12.2020</time>
+                                </li>
+                                <li class="post__meta-item">
+                                    <a href="#">Lorem, ipsum dolor.</a>
+                                </li>
+                            </ul>
+                            <a href="post.html" class="post__read">Read more</a>
+                        </footer>
+                    </article>
+                
+                    <!-- Pagination -->
+                    <ul class="pagination">
+                        <li class="pagination__item">
+                            <a href="#" class="pagination__link pagination__link--prev">&lt;</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">1</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link pagination__link--active">2</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link">3</a>
+                        </li>
+                        <li class="pagination__item">
+                            <a href="" class="pagination__link pagination__link--next">&gt;</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+        </main>
+
+        <div class="modal" id="modal-story">
+            <div class="modal__content modal__content--story">
+                <video src="" poster="assets/images/Rectangle 10.jpg" class="modal__video"></video>
+            </div>
+        </div>        <div class="modal" id="modal-share">
+            <div class="modal__content">
+                <button type="button" class="modal__close">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        class="svg-close">
+                        <path
+                            d="M11.1047 10.0008L19.7709 1.33447C20.0761 1.02935 20.0761 0.534663 19.7709 0.229585C19.4658 -0.0754924 18.9711 -0.0755315 18.6661 0.229585L9.99975 8.8959L1.33347 0.229585C1.02836 -0.0755315 0.533671 -0.0755315 0.228593 0.229585C-0.0764842 0.534702 -0.0765233 1.02939 0.228593 1.33447L8.89487 10.0007L0.228593 18.667C-0.0765233 18.9722 -0.0765233 19.4669 0.228593 19.7719C0.381132 19.9245 0.581093 20.0007 0.781053 20.0007C0.981014 20.0007 1.18094 19.9245 1.33351 19.7719L9.99975 11.1057L18.666 19.7719C18.8186 19.9245 19.0185 20.0007 19.2185 20.0007C19.4184 20.0007 19.6184 19.9245 19.7709 19.7719C20.0761 19.4668 20.0761 18.9721 19.7709 18.667L11.1047 10.0008Z"
+                            fill="rgba(255,255,255, .5)" />
+                    </svg>
+                </button>
+                <ul class="modal__share">
+                    <li class="modal__share-item">
+                        <a href="" class="modal__share-link" target="_blank">
+                            <img src="assets/images/facebook.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="modal__share-item">
+                        <a href="" class="modal__share-link" target="_blank">
+                            <img src="assets/images/twitter.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="modal__share-item">
+                        <a href="" class="modal__share-link" target="_blank">
+                            <img src="assets/images/vk.svg" alt="">
+                        </a>
+                    </li>
+                    <li class="modal__share-item">
+                        <a href="" class="modal__share-link">
+                            <img src="assets/images/copy.svg" alt="">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>        <div class="modal" id="modal-contact">
+            <div class="modal__content modal__content--contact">
+                <button type="button" class="modal__close">
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="svg-close">
+                        <path
+                            d="M11.1047 10.0008L19.7709 1.33447C20.0761 1.02935 20.0761 0.534663 19.7709 0.229585C19.4658 -0.0754924 18.9711 -0.0755315 18.6661 0.229585L9.99975 8.8959L1.33347 0.229585C1.02836 -0.0755315 0.533671 -0.0755315 0.228593 0.229585C-0.0764842 0.534702 -0.0765233 1.02939 0.228593 1.33447L8.89487 10.0007L0.228593 18.667C-0.0765233 18.9722 -0.0765233 19.4669 0.228593 19.7719C0.381132 19.9245 0.581093 20.0007 0.781053 20.0007C0.981014 20.0007 1.18094 19.9245 1.33351 19.7719L9.99975 11.1057L18.666 19.7719C18.8186 19.9245 19.0185 20.0007 19.2185 20.0007C19.4184 20.0007 19.6184 19.9245 19.7709 19.7719C20.0761 19.4668 20.0761 18.9721 19.7709 18.667L11.1047 10.0008Z"
+                            fill="rgba(255,255,255, .5)" />
+                    </svg>
+                </button>
+                <form action="/" method="POST" class="modal__form">
+                    <div class="nodal__body">
+                        <div class="form__group mb-25">
+                            <input type="text" class="form__control" placeholder="your name">
+                            <span class="form__line"></span>
+                        </div>
+                        <div class="form__group mb-25">
+                            <textarea name="message" class="form__control form__control--textarea" placeholder="your message"></textarea>
+                            <span class="form__line"></span>
+                        </div>
+                    </div>
+                
+                    <div class="modal__footer">
+                        <button type="submit" class="btn btn--blue">Send</button>
+                    </div>
+                </form>
+                <div class="modal__footer">
+                    <ul class="modal__footer-contact">
+                        <li>
+                            email: <a href="mailto://johnny.cavendish_at@mail.example" title="johnny.cavendish_at@mail.example">johnny.cavendish_at@mail.example</a>
+                        </li>
+                        <li>
+                            tel: <a href="tel:+123455678" title="12345678">12345678</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- JS -->
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

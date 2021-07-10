@@ -1,0 +1,32 @@
+.header{
+    margin-left: auto;
+    width: calc(100% - #{$sidebarWidth});
+    display: flex;
+    background-color: #0D0D0D;
+    box-shadow: 0 5px 22px rgba(black, .25);
+
+    &__left{
+        flex: 1 1 60%;
+
+        @include breakpoint($tablet-bp){
+            flex: 1;
+            position: relative;
+        }
+    }
+
+    &__right{
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        flex: 1 1 40%;
+
+        @include breakpoint($tablet-bp){
+            flex: 2;
+        }
+    }
+
+    @include breakpoint($tablet-bp){
+        margin-left: unset;
+        width: 100%;
+    }
+}

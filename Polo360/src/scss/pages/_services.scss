@@ -1,0 +1,121 @@
+/* Service Page styles */
+header.services{
+    margin-top: 0;
+    margin-bottom: 2em;
+    height: 350px;
+
+    .services-img{
+        background: linear-gradient(rgba($active, 0.45), rgba($title-color, 0.45)), url(../media/service-img.jpeg) no-repeat center center;
+        background-size: cover;
+        width: 100%;
+        height: 350px;
+    }
+    .service-desc{
+        position: relative;
+        bottom: 2.5em;
+        font-size: 2em;
+
+        h3{
+            padding-left: 0.2em;
+            color: $body-color;
+        }
+    }
+    .header-breadcrumbs{
+        position: relative;
+        bottom: 5em;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex-flow: row wrap;
+        padding: 0.5em;
+
+        a{
+            @include links;
+            color: #eee;
+        }
+        p{
+            margin: 0;
+            color: $body-color;
+        }
+    }
+}
+
+.col-4-img{
+    background-color: #f3f3f3;
+    border-radius: 5px;
+    -webkit-box-shadow: 1px 5px 10px #bbb;
+            box-shadow: 1px 5px 10px #bbb;
+}
+.service-description{
+    @media screen and (max-width: 575px){
+        padding: 0 1em;
+    }
+    p{
+        color: $post-text-color;
+        font-size: calc(12px + 0.3vw);
+        line-height: 2;
+    }
+}
+.service-list{
+    @media screen and (max-width: 575px){
+        padding: 0 1em;
+    }
+    p.service-list__title{
+        font-size: calc(13px + 0.4vw);
+        color: #444;
+    }
+
+    .service-list__cont{
+        padding-left: 0;
+        margin-left: -1px;
+        display: flex;
+        align-items: stretch;
+        p{
+            padding-left: 0.2em;
+            color: $post-text-color;
+            font-size: calc(12px + 0.3vw);
+            line-height: 2;
+        }
+        span.checklist{
+            display: inline-block;
+            background: url(../media/checklist.png) no-repeat center center;
+            background-size: cover;
+            width: 32px;
+            height: 32px;
+        }
+    }
+}
+
+.service-manager{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    padding: 2em;
+
+    p.name{
+        margin: 0;
+        padding-top: 1em;
+        font-size: calc(12px + 0.3vw);
+        color: $post-btn-text-color;
+    }
+    p.function{
+        margin: 0;
+        font-size: calc(12px + 0.3vw);
+        color: #3e3e3e;
+    }
+}
+.service-manager__opinion{
+    padding: 1.8em;
+
+    h3{
+        font-size: calc(16px + 0.3vw);
+    }
+    p{
+        margin: 0;
+        line-height: 2;
+        font-size: calc(12px + 0.3vw);
+        color: #3e3e3e;
+    }
+}
+/* =================== */

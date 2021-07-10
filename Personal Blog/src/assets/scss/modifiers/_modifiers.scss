@@ -1,0 +1,32 @@
+.mb-0{
+    margin-bottom: 0;
+}
+
+.ml-1{
+    margin-left: 1rem;
+}
+
+.mb-25{
+    margin-bottom: 2.5rem;
+}
+
+.mb-75{
+    margin-bottom: .75rem;
+}
+
+.post__panel-link--icon{
+    display: flex;
+    align-items: center;
+}
+
+.page__title{
+    margin-bottom: 3rem;
+    font-size: 2.1rem;
+    color: $white;
+}
+
+@include breakpoint($mobile-bp){
+    .btn--full{
+        width: 100%;
+    }
+}
